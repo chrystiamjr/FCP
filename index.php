@@ -114,7 +114,7 @@
   </div>
 
 </div>
-<!-- /#wrapper -->
+<!-- /#wrapper   -->
 
 <?php include_once "includes/scripts.php"; ?>
 

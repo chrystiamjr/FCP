@@ -2,7 +2,6 @@
 
 class dbTeste
 {
-
     private $conn;
 
     function __construct()
