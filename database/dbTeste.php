@@ -8,7 +8,7 @@ class dbTeste
     {
         require 'dbConexao.php';
         $this->conn = conectar();
-    }//construct
+    }//construct aaaaaaaaaaaaaa
 
     public function listarTodos()
     {
