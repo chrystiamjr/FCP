@@ -19,8 +19,11 @@
         <ul class="nav nav-second-level">
 
           <li>
-            <a href="/<?php echo $project; ?>view/cadastrar.php">Gerenciar eventos</a>
+            <a href="/<?php echo $project; ?>view/listar.php">Gerenciar Eventos</a>
           </li>
+            <li>
+                <a href="/<?php echo $project; ?>view/cadastrar.php">Cadastrar Eventos</a>
+            </li>
 
         </ul>
       </li>

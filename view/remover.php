@@ -12,7 +12,7 @@
     <input type="hidden" name="sOP" value="remover">
     <input type="hidden" name="id_evento" value="<?php $_GET['id_evento'];?>">
 <h4>Deseja Remover Este Evento?</h4>
-<input type="submit" value="Remover">
+<input type="submit" value="Remover" >
 </form>
 
 </body>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_fcp@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_fcp">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="dbfcp"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="pdo"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="phpmyadmin"/>
+    <schema id="9" parent="1" name="test"/>
+    <table id="10" parent="2" name="contato_setor"/>
+    <table id="11" parent="2" name="evento_setor"/>
+    <table id="12" parent="2" name="setor_fundacao"/>
+    <table id="13" parent="2" name="setor_usuario"/>
+    <table id="14" parent="2" name="usuario_fundacao"/>
+    <column id="15" parent="10" name="id_contato">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="10" name="id_setor">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="10" name="area_atuacao">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="10" name="nome">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="10" name="numero">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="10" name="email">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="21" parent="10" name="fk_contato_setor_setor_fundacao1_idx">
+      <ColNames>id_setor</ColNames>
+    </index>
+    <key id="22" parent="10" name="PRIMARY">
+      <ColNames>id_contato
+id_setor</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="23" parent="10" name="fk_contato_setor_setor_fundacao1">
+      <ColNames>id_setor</ColNames>
+      <RefSchemaName>db_fcp</RefSchemaName>
+      <RefTableName>setor_fundacao</RefTableName>
+      <RefColNames>id_setor</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="24" parent="11" name="id_evento">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="11" name="id_setor">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="11" name="nome">
+      <Position>3</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="11" name="descricao">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="11" name="horario">
+      <Position>5</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="11" name="preco">
+      <Position>6</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="30" parent="11" name="fk_Eventos_setores_idx">
+      <ColNames>id_setor</ColNames>
+    </index>
+    <key id="31" parent="11" name="PRIMARY">
+      <ColNames>id_evento
+id_setor</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="32" parent="11" name="fk_Eventos_setores">
+      <ColNames>id_setor</ColNames>
+      <RefSchemaName>db_fcp</RefSchemaName>
+      <RefTableName>setor_fundacao</RefTableName>
+      <RefColNames>id_setor</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="33" parent="12" name="id_setor">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="12" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="12" name="PRIMARY">
+      <ColNames>id_setor</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="13" name="id_setor">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="13" name="id_usuario">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="38" parent="13" name="fk_usuario_fundacao_has_setor_fundacao_setor_fundacao1_idx">
+      <ColNames>id_setor</ColNames>
+    </index>
+    <index id="39" parent="13" name="fk_usuario_fundacao_has_setor_fundacao_usuario_fundacao1_idx">
+      <ColNames>id_usuario</ColNames>
+    </index>
+    <key id="40" parent="13" name="PRIMARY">
+      <ColNames>id_setor
+id_usuario</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="41" parent="13" name="fk_usuario_fundacao_has_setor_fundacao_setor_fundacao1">
+      <ColNames>id_setor</ColNames>
+      <RefSchemaName>db_fcp</RefSchemaName>
+      <RefTableName>setor_fundacao</RefTableName>
+      <RefColNames>id_setor</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <foreign-key id="42" parent="13" name="fk_usuario_fundacao_has_setor_fundacao_usuario_fundacao1">
+      <ColNames>id_usuario</ColNames>
+      <RefSchemaName>db_fcp</RefSchemaName>
+      <RefTableName>usuario_fundacao</RefTableName>
+      <RefColNames>id_usuario</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="43" parent="14" name="id_usuario">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="14" name="nome_usuario">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="14" name="login">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="14" name="senha">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="14" name="tipo_usuario">
+      <Position>5</Position>
+      <Comment>0 = SuperAdmin;
+1 = Gerente;
+2 = Moderador;</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="14" name="id_gerente">
+      <Position>6</Position>
+      <Comment>Caso o usuário seja moderador, ele terá que &quot;depender&quot; de um gerente, portanto será relacionado o moderador com o id_gerente.</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="49" parent="14" name="PRIMARY">
+      <ColNames>id_usuario</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

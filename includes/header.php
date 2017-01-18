@@ -14,7 +14,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Bootstrap Admin Theme</title>
+  <title>FCP</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="/<?php echo $project; ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

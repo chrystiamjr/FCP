@@ -3,27 +3,53 @@ include_once  '../database/dbTeste.php';
 $teste = new dbTeste();
 ?>
 
-<!doctype html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <?php include_once "../includes/header.php"; ?>
 
-    <title>Listar Eventos</title>
+    <style>
+        textarea {
+            resize: none;
+            overflow: auto;
+        }
+        label{
+            text-align: center !important;
+        }
+        #cadastrar{
+            float: right;
+        }
+    </style>
+    <link rel="stylesheet" href="../vendor/datatables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../vendor/datatables-plugins/dataTables.bootstrap.css">
 
-</head>
+
+
+
 <body>
-<div class="container">
 
-<h2 style="padding-bottom: 5px">Listando Eventos</h2>
-    <a href="cadastrar.php" style="" type="button" class="btn-lg btn-success">Cadastrar Evento</a>
-<hr><!--Horizontal Rule-->
+<?php include_once "../includes/sidebar.php"; ?>
+<div id="wrapper">
+
+<div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                <a id="cadastrar" href="cadastrar.php" type="button" class="btn-lg btn-success pull-right">Cadastrar Evento</a>
+                Gerenciar Eventos</h1>
+        </div>
+
+
+
+        <!-- /.col-lg-12 -->
+     </div>
+    <!-- /.row -->
+
+
+
 
 <div class="table-responsive">
-<table class="table table-bordered">
+<table id= "tabela" class="table table-striped table-bordered table-hover">
     <thead><!--Table Header-->
         <tr><!--Table Row-->
             <th>#</th><!--Table Header Cell-->
@@ -48,6 +74,18 @@ $teste = new dbTeste();
             </td>
         </tr>
     <?php }?>
+
+    <?php include_once "../includes/scripts.php"; ?>
+    <script type="text/javascript" src="../vendor/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $('#tabela').DataTable({
+            "bLengthChange": false,"language": {"search":"Pesquisar:","paginate":
+                {"first":"Primeiro","last":"Ultimo","next":"Próximo","previous": "Anterior"}}
+            //,"info": false
+        });
+    </script>
 
         </tbody>
     </table>
