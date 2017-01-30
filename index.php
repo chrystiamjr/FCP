@@ -1,81 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include_once "includes/header.php"; ?>
 
-<head>
+<?php if(isset($_SESSION['tipo_usuario'])){
+  if($_SESSION['tipo_usuario'] == '0'){
+    echo '<script>location.href="view/admin/dash.php";</script>';
+  }
+} ?>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<style>
+  #overlay {
+    background: rgba(255, 255, 255, 0.6);
+    color: #666666;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 12%;
+  }
 
-    <title>FCP Login</title>
+  .login_bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), #4e4e8e no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .label-danger{
+    color: white;
+  }
+</style>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body class="login_bg">
 
-    <!-- MetisMenu CSS -->
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <div id="loader"></div>
 
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Fundação Cultural do Pará Login</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Usuário" name="email" type="text" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Senha" name="password" type="password" value="">
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Lembrar-me?
-                                    </label>
-                                </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.php" class="btn btn-lg btn-success btn-block">Acessar</a>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <img src="<?php echo $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto" style="margin-top:45%">
+        <div class="login-panel panel panel-default" style="margin-top: 5%;">
+          <div class="panel-heading" style="background-color: #4e4e8e; color:white">
+            <h3 class="panel-title" style="text-align:center">Fundação Cultural do Pará - Login</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="usuario" class="control-label">Usuário</label>
+              <input id="usuario" class="form-control" type="text" value="" autofocus="">
             </div>
+            <div class="form-group">
+              <label for="senha" class="control-label">Senha</label>
+              <input id="senha" class="form-control" type="password" value="">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input id="lembrar" type="checkbox" value="Remember Me">Lembrar-me?
+              </label>
+            </div>
+            <!-- Change this to a button or input when using this as a form -->
+            <button class="btn btn-success pull-left" style="padding: 10 45" id="acessarSistema">Acessar</button>
+            <button class="btn btn-default pull-right" style="padding: 10 25" id="limpaDados">Limpar campos</button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="vendor/metisMenu/metisMenu.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="dist/js/sb-admin-2.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $('#limpaDados').click(function () {
+    $('#usuario').val('');
+    $('#senha').val('');
+  });
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+  $("#acessarSistema").click(function () {
 
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
+    $('#usuario').removeClass('label-danger');
+    $('#senha').removeClass('label-danger');
+
+    var usuario = $('#usuario').val();
+    var senha = $('#senha').val();
+
+    if(usuario != "" && senha != "") {
+      $.ajax({
+        url: '<?php echo $project; ?>database/dbLogin.php',
+        type: 'POST',
+        data: {'usuario': usuario, 'senha': senha, action: 'login'},
+        datatype: 'json',
+        start: function () {
+          var loading = '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
+          $('#loader').append(loading);
+        },
+        success: function (data) {
+
+          $('#loader#overlay').remove();
+          if (data != null && data != "inexistente") {
+
+            var dataID = data.substring(0,1);
+            var dataTipo = data.substring(2,3);
+            var dataSetor = data.substring(4,5);
+            var dataNome = data.substring(6);
+
+            if(dataTipo == 0)
+            {
+              $.post('<?php echo $project; ?>sessions.php', {tipo_usuario: dataTipo, action: 'loginAdmin'}, function() {
+                console.log("complete");
+              });
+              window.location.href = window.location.href + "view/admin/dash.php";
+            }
+            else
+            {
+              $.post('<?php echo $project; ?>sessions.php', {id: dataID, nome: dataNome, setor: dataSetor, tipo_usuario: dataTipo, action: 'loginUser'}, function() {
+                console.log("complete");
+              });
+              window.location.href = window.location.href + "view/public/dash.php";
+            }
+
+          } else {
+            alert('Dados inválidos ou inexistentes!');
+            $('#usuario').val("");
+            $('#senha').val("");
+          }
+        }
+      });
+    } else{
+      alert('Os campos não podem ficar em branco!');
+      $('#usuario').addClass('label-danger');
+      $('#senha').addClass('label-danger');
+    }
+  })
+  </script>
 
 </body>
 
