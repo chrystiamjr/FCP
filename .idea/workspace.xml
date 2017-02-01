@@ -2,102 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee0a82c-dbc7-4056-bf20-cde2b16b2946" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo-fcp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/spinner/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ChrystiamJunior.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/casaArtesCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/casaLinguagemCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/cineLiberoCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/setorCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/usuarioCtrl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbCasaArtes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbCasaLinguagem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbCineLibero.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbLogin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbSetor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/dbUsuario.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/db_fcp.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/u841648456_dbfcp.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/sidebarAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/sidebarUser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/uriFormater.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/setores/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/setores/modalSetores.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/usuarios/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/modalArtes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/modalArtes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/modalLinguagem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/modalLinguagem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/modalCine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/modalCine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/dash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/usuarios/listar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/27680ca4-3300-4140-9e23-c4dd70383878.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/27680ca4-3300-4140-9e23-c4dd70383878/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Novo Documento de Texto.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/testeCtrl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-switch.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dataTables.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery.datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery.gritter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/prettyPhoto.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/printing.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/rateit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/star.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/dbTeste.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/alterar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/cadastrar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/listar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/remover.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/view/dash.php" afterPath="$PROJECT_DIR$/view/admin/dash.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FCP.iml" afterPath="$PROJECT_DIR$/.idea/FCP.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbConexao.php" afterPath="$PROJECT_DIR$/database/dbConexao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCasaArtes.php" afterPath="$PROJECT_DIR$/database/dbCasaArtes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCasaLinguagem.php" afterPath="$PROJECT_DIR$/database/dbCasaLinguagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCineLibero.php" afterPath="$PROJECT_DIR$/database/dbCineLibero.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/u841648456_dbfcp.sql" afterPath="$PROJECT_DIR$/database/u841648456_dbfcp.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/scripts.php" afterPath="$PROJECT_DIR$/includes/scripts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sidebar.php" afterPath="$PROJECT_DIR$/includes/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sidebarAdmin.php" afterPath="$PROJECT_DIR$/includes/sidebarAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sidebarUser.php" afterPath="$PROJECT_DIR$/includes/sidebarUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/uriFormater.php" afterPath="$PROJECT_DIR$/includes/uriFormater.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/setores/listar.php" afterPath="$PROJECT_DIR$/view/admin/setores/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/setores/modalSetores.php" afterPath="$PROJECT_DIR$/view/admin/setores/modalSetores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/usuarios/listar.php" afterPath="$PROJECT_DIR$/view/admin/usuarios/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" afterPath="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/contatos/modalArtes.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/modalArtes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/eventos/modalArtes.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/modalArtes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/modalLinguagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/modalLinguagem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/contatos/modalCine.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/modalCine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/eventos/modalCine.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/modalCine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/usuarios/listar.php" afterPath="$PROJECT_DIR$/view/public/usuarios/listar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" afterPath="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" />
     </list>
     <ignored path="FCP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,30 +68,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
-        <option value="$PROJECT_DIR$/database/dbCasaArtes.php" />
-        <option value="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" />
-        <option value="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" />
-        <option value="$PROJECT_DIR$/database/dbSetores.php" />
-        <option value="$PROJECT_DIR$/view/admin/setores/modalSetores.php" />
-        <option value="$PROJECT_DIR$/view/admin/setores/listar.php" />
         <option value="$PROJECT_DIR$/controller/setorCtrl.php" />
         <option value="$PROJECT_DIR$/database/u291050455_dbfcp.sql" />
         <option value="$PROJECT_DIR$/database/dbConexao.php" />
         <option value="$PROJECT_DIR$/includes/scripts.php" />
-        <option value="$PROJECT_DIR$/database/dbCasaLinguagem.php" />
-        <option value="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" />
-        <option value="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" />
-        <option value="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" />
-        <option value="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" />
-        <option value="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" />
-        <option value="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" />
         <option value="$PROJECT_DIR$/database/u841648456_dbfcp.sql" />
         <option value="$PROJECT_DIR$/database/db_fcp.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
@@ -168,14 +91,34 @@
         <option value="$PROJECT_DIR$/controller/casaArtesCtrl.php" />
         <option value="$PROJECT_DIR$/controller/cineLiberoCtrl.php" />
         <option value="$PROJECT_DIR$/controller/casaLinguagemCtrl.php" />
-        <option value="$PROJECT_DIR$/view/admin/usuarios/listar.php" />
         <option value="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" />
         <option value="$PROJECT_DIR$/includes/sidebarUser.php" />
         <option value="$PROJECT_DIR$/database/dbSetor.php" />
         <option value="$PROJECT_DIR$/database/dbUsuario.php" />
-        <option value="$PROJECT_DIR$/view/public/usuarios/listar.php" />
         <option value="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" />
         <option value="$PROJECT_DIR$/controller/usuarioCtrl.php" />
+        <option value="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" />
+        <option value="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/setores/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/usuarios/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/dash.php" />
+        <option value="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" />
+        <option value="$PROJECT_DIR$/view/public/usuarios/listar.php" />
+        <option value="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" />
+        <option value="$PROJECT_DIR$/includes/header.php" />
+        <option value="$PROJECT_DIR$/database/dbCineLibero.php" />
+        <option value="$PROJECT_DIR$/database/dbCasaArtes.php" />
+        <option value="$PROJECT_DIR$/database/dbCasaLinguagem.php" />
       </list>
     </option>
   </component>
@@ -257,74 +200,6 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -333,7 +208,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="side&#9;FILE&#9;file:///Applications/MAMP/htdocs/FCP/includes/sidebarAdmin.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/FCP/includes/header.php&#10;sidba&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/FCP/includes/header.php&#10;side&#9;FILE&#9;file:///Applications/MAMP/htdocs/FCP/includes/sidebarAdmin.php&#10;sidba&#9;null&#9;null" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
@@ -416,14 +291,16 @@
       <workItem from="1485774125735" duration="2204000" />
       <workItem from="1485776901091" duration="8226000" />
       <workItem from="1485786308205" duration="6428000" />
+      <workItem from="1485806147051" duration="4667000" />
+      <workItem from="1485871747320" duration="1392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56344000" />
+    <option name="totallyTimeSpent" value="62403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -462,145 +339,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/dbTeste.php" />
-    <entry file="file://$PROJECT_DIR$/database/dbCasaArtes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="76" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="170" selection-end-column="8" />
-          <folding>
-            <marker date="1485544918000" expanded="true" signature="357:388" ph="Select * fro... evento_casa_artes" />
-            <marker date="1485544918000" expanded="true" signature="681:729" ph="Select * fro... evento_casa_artes" />
-            <marker date="1485544918000" expanded="true" signature="1066:1369" ph="INSERT INTO evento_casa_artes" />
-            <marker date="1485544918000" expanded="true" signature="1200:1261" ph="Select id_se... setor_fundacao" />
-            <marker date="1485544918000" expanded="true" signature="1757:1895" ph="UPDATE event... " />
-            <marker date="1485544918000" expanded="true" signature="1938:2145" ph="UPDATE event... " />
-            <marker date="1485544918000" expanded="true" signature="2371:2419" ph="Delete From " />
-            <marker date="1485544918000" expanded="true" signature="2781:2814" ph="SELECT * fro... contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="2781:2887" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="2787:2814" ph="Select * fro... contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="2825:2886" ph="Select id_se... setor_fundacao" />
-            <marker date="1485544918000" expanded="true" signature="3183:3228" ph="Select * fro... contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="3183:3331" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="3651:3906" ph="INSERT INTO contato_setor" />
-            <marker date="1485544918000" expanded="true" signature="3775:3836" ph="Select id_se... setor_fundacao" />
-            <marker date="1485544918000" expanded="true" signature="4159:4313" ph="UPDATE conta... " />
-            <marker date="1485544918000" expanded="true" signature="4536:4687" ph="Delete From " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1876">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <caret line="133" column="29" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="117" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="120" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="147" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/setores/modalSetores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/dbCasaLinguagem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/setores/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/u841648456_dbfcp.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -626,7 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,14 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -657,15 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,23 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebarAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="102" column="76" selection-start-line="102" selection-start-column="76" selection-end-line="102" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="147" column="58" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
           <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
           <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +460,6 @@
           <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
           <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
           <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +472,6 @@
           <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
           <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
           <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,20 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <marker date="1485782386000" expanded="true" signature="277:340" ph="SELECT id_us... super_user" />
-            <marker date="1485782386000" expanded="true" signature="277:372" ph="SELECT id_us... " />
-            <marker date="1485782386000" expanded="true" signature="685:778" ph="SELECT uf.id... usuario_fundacao" />
-            <marker date="1485782386000" expanded="true" signature="685:921" ph="SELECT uf.id... usuario_fundacao" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="117" column="17" selection-start-line="115" selection-start-column="14" selection-end-line="117" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,15 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="165" column="61" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/usuarios/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="149" column="21" selection-start-line="149" selection-start-column="10" selection-end-line="149" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,14 +500,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="162" column="10" selection-start-line="162" selection-start-column="10" selection-end-line="162" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/dbUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/usuarioCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/usuarios/modalUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="119" column="135" selection-start-line="119" selection-start-column="135" selection-end-line="119" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebarUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="89" column="77" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/dash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/usuarios/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/setores/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/usuarios/listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1420">
+          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="167" column="108" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebarAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/dbCasaLinguagem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+          <folding>
+            <marker date="1485873826000" expanded="true" signature="365:484" ph="Select id_ev... evento_casa_artes" />
+            <marker date="1485873826000" expanded="true" signature="781:921" ph="Select id_ev... evento_casa_artes" />
+            <marker date="1485873826000" expanded="true" signature="1254:1545" ph="INSERT INTO evento_casa_artes" />
+            <marker date="1485873826000" expanded="true" signature="1383:1448" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873826000" expanded="true" signature="1933:2055" ph="UPDATE event... " />
+            <marker date="1485873826000" expanded="true" signature="2098:2289" ph="UPDATE event... " />
+            <marker date="1485873826000" expanded="true" signature="2519:2571" ph="Delete From " />
+            <marker date="1485873826000" expanded="true" signature="2937:3047" ph="SELECT * FRO... contato_setor" />
+            <marker date="1485873826000" expanded="true" signature="2981:3046" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873826000" expanded="true" signature="3347:3499" ph="SELECT * FRO... contato_setor" />
+            <marker date="1485873826000" expanded="true" signature="3823:4082" ph="INSERT INTO contato_setor" />
+            <marker date="1485873826000" expanded="true" signature="3947:4012" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873826000" expanded="true" signature="4339:4493" ph="UPDATE conta... " />
+            <marker date="1485873826000" expanded="true" signature="4720:4875" ph="Delete From " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/dbSetor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding>
             <marker date="1485801025000" expanded="true" signature="413:441" ph="Select * fro... setor_fundacao" />
             <marker date="1485801025000" expanded="true" signature="720:764" ph="Select * fro... setor_fundacao" />
@@ -851,69 +719,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/dbUsuario.php">
+    <entry file="file://$PROJECT_DIR$/database/dbCasaArtes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+        <state relative-caret-position="720">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
           <folding>
-            <marker date="1485801033000" expanded="true" signature="416:417" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="416:425" ph="SELECT * fro... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="416:446" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="739:915" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1206:1237" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1206:1335" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1206:1351" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1206:1363" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1638:1639" ph="SELECT * FRO... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1638:1666" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="1948:2009" ph="SELECT nome_... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="2299:2343" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="2624:2699" ph="SELECT id_us... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="3018:3157" ph="INSERT INTO usuario_fundacao... " />
-            <marker date="1485801033000" expanded="true" signature="3018:3176" ph="INSERT INTO setor_fundacao... " />
-            <marker date="1485801033000" expanded="true" signature="3192:3365" ph="INSERT INTO setor_usuario... " />
-            <marker date="1485801033000" expanded="true" signature="3274:3333" ph="SELECT id_us... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="3274:3346" ph="SELECT id_us... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="3274:3353" ph="SELECT id_us... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="3274:3363" ph="SELECT id_us... usuario_fundacao" />
-            <marker date="1485801033000" expanded="true" signature="3660:3838" ph="UPDATE usuar... " />
-            <marker date="1485801033000" expanded="true" signature="3881:3999" ph="UPDATE usuar... " />
-            <marker date="1485801033000" expanded="true" signature="4242:4267" ph="DELETE FROM " />
-            <marker date="1485801033000" expanded="true" signature="4242:4287" ph="DELETE FROM " />
-            <marker date="1485801033000" expanded="true" signature="4315:4363" ph="DELETE FROM " />
+            <marker date="1485873773000" expanded="true" signature="357:484" ph="Select id_ev... evento_casa_artes" />
+            <marker date="1485873773000" expanded="true" signature="777:921" ph="Select id_ev... evento_casa_artes" />
+            <marker date="1485873773000" expanded="true" signature="1258:1561" ph="INSERT INTO evento_casa_artes" />
+            <marker date="1485873773000" expanded="true" signature="1392:1453" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873773000" expanded="true" signature="1949:2087" ph="UPDATE event... " />
+            <marker date="1485873773000" expanded="true" signature="2130:2337" ph="UPDATE event... " />
+            <marker date="1485873773000" expanded="true" signature="2563:2611" ph="Delete From " />
+            <marker date="1485873773000" expanded="true" signature="2973:3079" ph="SELECT * FRO... contato_setor" />
+            <marker date="1485873773000" expanded="true" signature="3017:3078" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873773000" expanded="true" signature="3375:3523" ph="SELECT * FRO... contato_setor" />
+            <marker date="1485873773000" expanded="true" signature="3843:4098" ph="INSERT INTO contato_setor" />
+            <marker date="1485873773000" expanded="true" signature="3967:4028" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873773000" expanded="true" signature="4351:4505" ph="UPDATE conta... " />
+            <marker date="1485873773000" expanded="true" signature="4728:4879" ph="Delete From " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/usuarioCtrl.php">
+    <entry file="file://$PROJECT_DIR$/database/dbCineLibero.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/usuarios/listar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/usuarios/modalUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="119" column="135" selection-start-line="119" selection-start-column="135" selection-end-line="119" selection-end-column="135" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebarUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="89" column="77" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
-          <folding />
+        <state relative-caret-position="628">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding>
+            <marker date="1485873634000" expanded="true" signature="357:364" ph="Select * fro... evento_cinema" />
+            <marker date="1485873634000" expanded="true" signature="357:530" ph="Select id_ev... evento_cinema" />
+            <marker date="1485873634000" expanded="true" signature="822:1026" ph="Select id_ev... evento_cinema" />
+            <marker date="1485873634000" expanded="true" signature="1378:1717" ph="INSERT INTO evento_cinema" />
+            <marker date="1485873634000" expanded="true" signature="1528:1588" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873634000" expanded="true" signature="2101:2289" ph="UPDATE event... " />
+            <marker date="1485873634000" expanded="true" signature="2332:2572" ph="UPDATE event... " />
+            <marker date="1485873634000" expanded="true" signature="2796:2840" ph="Delete From " />
+            <marker date="1485873634000" expanded="true" signature="3201:3306" ph="Select * fro... contato_setor" />
+            <marker date="1485873634000" expanded="true" signature="3245:3305" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873634000" expanded="true" signature="3601:3748" ph="Select * fro... contato_setor" />
+            <marker date="1485873634000" expanded="true" signature="4067:4319" ph="INSERT INTO contato_setor" />
+            <marker date="1485873634000" expanded="true" signature="4189:4249" ph="Select id_se... setor_fundacao" />
+            <marker date="1485873634000" expanded="true" signature="4571:4725" ph="UPDATE conta... " />
+            <marker date="1485873634000" expanded="true" signature="4947:5096" ph="Delete From " />
+          </folding>
         </state>
       </provider>
     </entry>

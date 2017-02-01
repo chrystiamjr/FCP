@@ -15,7 +15,9 @@ class dbCineLibero
 
   public function listarTodosEventosCine()
   {
-    $query = "Select * from evento_cinema";
+    $query = "Select id_evento,id_setor,nome,descricao,programacao_regular,projetos,
+              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco
+              from evento_cinema";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,7 +30,10 @@ class dbCineLibero
 
   public function listarUmEventoCine($idEvento)
   {
-    $query = "Select * from evento_cinema WHERE id_evento={$idEvento}";
+    $query = "Select id_evento,id_setor,nome,descricao,programacao_regular,projetos,
+              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco
+              from evento_cinema
+              WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -42,8 +47,8 @@ class dbCineLibero
 
   public function cadastrarEventoCine($nome, $descricao, $progRegular, $projetos, $horario, $preco)
   {
-    $query = "INSERT INTO 
-              evento_cinema(id_setor, nome, descricao, programacao_regular, projetos, horario,preco) 
+    $query = "INSERT INTO
+              evento_cinema(id_setor, nome, descricao, programacao_regular, projetos, horario,preco)
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%CINE%'),
               '{$nome}', '{$descricao}', '{$progRegular}', '{$projetos}',STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), {$preco});";
@@ -109,7 +114,7 @@ class dbCineLibero
 
   public function listarUmContatoCine($idContato)
   {
-    $query = "Select * from contato_setor WHERE id_contato={$idContato} AND 
+    $query = "Select * from contato_setor WHERE id_contato={$idContato} AND
               id_setor=(Select id_setor FROM setor_fundacao WHERE nome LIKE '%CINE%')";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -124,8 +129,8 @@ class dbCineLibero
 
   public function cadastrarContatoCine($areaAtuacao, $nome, $numero, $email)
   {
-    $query = "INSERT INTO 
-              contato_setor(id_setor, area_atuacao, nome, numero, email) 
+    $query = "INSERT INTO
+              contato_setor(id_setor, area_atuacao, nome, numero, email)
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%CINE%'),
               '{$areaAtuacao}', '{$nome}', '{$numero}', '{$email}');";
@@ -155,7 +160,7 @@ class dbCineLibero
 
   public function removerContatoCine($idContato)
   {
-    $query = "Delete From contato_setor WHERE id_contato = {$idContato} AND 
+    $query = "Delete From contato_setor WHERE id_contato = {$idContato} AND
               id_setor = (Select id_setor FROM setor_fundacao WHERE nome LIKE '%CINE%')";
 
     $result = $this->conn->exec($query);

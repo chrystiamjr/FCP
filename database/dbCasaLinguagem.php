@@ -15,7 +15,7 @@ class dbCasaLinguagem
 
   public function listarTodosEventosLinguagem()
   {
-    $query = "Select * from evento_casa_artes";
+    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,7 +28,7 @@ class dbCasaLinguagem
 
   public function listarUmEventoLinguagem($idEvento)
   {
-    $query = "Select * from evento_casa_artes WHERE id_evento={$idEvento}";
+    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_linguagem WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -44,7 +44,7 @@ class dbCasaLinguagem
   {
 
     $query = "INSERT INTO 
-              evento_casa_artes(id_setor, nome, descricao, horario,preco) 
+              evento_casa_linguagem(id_setor, nome, descricao, horario,preco) 
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%LINGUAGEM%'),
               '{$nome}', '{$descricao}', STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), {$preco});";
@@ -65,10 +65,10 @@ class dbCasaLinguagem
     $hr = $data[0]['horario'];
 
     if ($horario == $hr) {
-      $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', preco={$preco}
+      $query = "UPDATE evento_casa_linguagem SET nome='{$nome}', descricao='{$descricao}', preco={$preco}
                 WHERE id_evento={$idEvento}";
     } else {
-      $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', 
+      $query = "UPDATE evento_casa_linguagem SET nome='{$nome}', descricao='{$descricao}', 
                 horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco={$preco}
                 WHERE id_evento={$idEvento}";
     }
@@ -84,7 +84,7 @@ class dbCasaLinguagem
 
   public function removerEventoLinguagem($idEvento)
   {
-    $query = "Delete From evento_casa_artes WHERE id_evento = {$idEvento}";
+    $query = "Delete From evento_casa_linguagem WHERE id_evento = {$idEvento}";
     $result = $this->conn->exec($query);
     if ($result) {
       return true;

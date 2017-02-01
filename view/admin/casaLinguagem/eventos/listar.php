@@ -37,7 +37,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="pull-right" style="margin: 0 0 -70 0">
+        <div class="pull-right breadcumberbach">
           <ol class="breadcrumb">
             <li><a href="<?php echo $project; ?>view/admin/dash.php">Dashboard</a></li>
             <li class="active">Gerenciar Eventos</li>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
       type="button" class="btn btn-lg btn-primary pull-right">
       <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Adicionar"></i>
     </button>
-    <div class="row">
+    <div class="row midlle-content">
 
       <div class="col-lg-12">
 

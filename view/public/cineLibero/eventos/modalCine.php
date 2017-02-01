@@ -56,10 +56,10 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger btn-md pull-left" data-dismiss="modal" style="padding: 6 100">
+          <button type="button" class="btn btn-danger btn-md pull-left botao-fechar" data-dismiss="modal">
             Fechar
           </button>
-          <button type="submit" class="btn btn-success" style="padding: 6 100">Cadastrar</button>
+          <button type="submit" class="btn btn-success botao-cadastro">Cadastrar</button>
         </div>
       </form>
 
@@ -134,10 +134,10 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger btn-md pull-left" data-dismiss="modal" style="padding: 6 100">
+          <button type="button" class="btn btn-danger btn-md pull-left botao-fechar" data-dismiss="modal">
             Fechar
           </button>
-          <button type="submit" class="btn btn-success" style="padding: 6 100">Alterar</button>
+          <button type="submit" class="btn btn-success botao-alterar">Alterar</button>
         </div>
       </form>
 
@@ -168,10 +168,10 @@
           <h2 align="center">Deseja excluir esta entrada?</h2>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger btn-md pull-left" data-dismiss="modal" style="padding: 6 100">
+            <button type="button" class="btn btn-danger btn-md pull-left botao-fechar" data-dismiss="modal">
               Fechar
             </button>
-            <button type="submit" class="btn btn-success" style="padding: 6 100">Excluir</button>
+            <button type="submit" class="btn btn-success botao-remover">Excluir</button>
           </div>
       </form>
 

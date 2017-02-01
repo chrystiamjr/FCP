@@ -37,7 +37,7 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="pull-right" style="margin: 0 0 -70 0">
+        <div class="pull-right breadcumberbach">
           <ol class="breadcrumb">
             <li><a href="<?php echo $project; ?>view/public/dash.php">Dashboard</a></li>
             <li class="active">Gerenciar Contatos</li>
@@ -63,7 +63,7 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
       type="button" class="btn btn-lg btn-primary pull-right">
       <i class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="top" title="Adicionar"></i>
     </button>
-    <div class="row">
+    <div class="row midlle-content">
 
       <div class="col-lg-12">
 

@@ -5,11 +5,16 @@
 </style>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation"
-     style="margin-bottom: 0; background-color: #4e4e8e;">
-  <button class="btn btn-danger pull-right" id="btnSair"
-          style="margin-right: 20px;margin-top: 35;padding: 8 10;border-radius: 50">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #4e4e8e;">
+  <button class="btn btn-danger pull-right" id="btnSair" style="margin-right: 20px;margin-top: 35;padding: 8 10;border-radius: 50">
     <i class="glyphicon glyphicon-off"></i>
+  </button>
+  <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse"
+      style="background-color: white;margin: 34 0 0 25">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
   </button>
   <p class="pull-right" style="margin-right: 5px;margin-top: 35;padding: 7 0;color:white">Logout</p>
   <div class="navbar-header" height="auto">
@@ -22,7 +27,7 @@
   </div>
   <!-- /.navbar-header -->
 
-  <div class="navbar-default sidebar" role="navigation" style="margin-top: 110px !important;">
+  <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse">
       <ul class="nav" id="side-menu">
 

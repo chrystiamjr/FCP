@@ -15,7 +15,7 @@ class dbCasaArtes
 
   public function listarTodosEventosArtes()
   {
-    $query = "Select * from evento_casa_artes";
+    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,7 +28,7 @@ class dbCasaArtes
 
   public function listarUmEventoArtes($idEvento)
   {
-    $query = "Select * from evento_casa_artes WHERE id_evento={$idEvento}";
+    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

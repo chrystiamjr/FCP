@@ -306,7 +306,7 @@ CREATE TABLE IF NOT EXISTS `u841648456_dbfcp`.`super_user` (
   `login` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
   `tipo_usuario` INT NOT NULL,
-  PRIMARY KEY (`id_super_user`))
+  PRIMARY KEY (`id_usuario`))
 ;
 
 
@@ -314,17 +314,6 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-
--- INSERÇÃO SUPER_USER
-INSERT INTO `db_fcp`.`super_user` (`nome_usuario`, `login`, `senha`, `tipo_usuario`) VALUES ("ADMIN", "fcp_admin", "@fcpadmin123", 0);
-
--- INSERÇÃO USER
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Gerente Cine", "gerente_cine", "gerente_cine123", 2, 0);
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Gerente Artes", "gerente_artes", "gerente_artes123", 2, 0);
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Gerente Linguagem", "gerente_linguagem", "gerente_clinguagem123",2, 0);
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Moderador Cine", "user_cine", "user_cine123", 1, 1);
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Moderador Artes", "user_artes", "user_artes123", 1, 2);
-INSERT INTO `db_fcp`.`usuario_fundacao` (nome_usuario, login, senha, tipo_usuario, id_gerente) VALUES ("Moderador Linguagem", "user_linguagem", "user_linguagem123", 1, 3);
 
 -- INSERÇÃO SETOR_FUNDACAO
 INSERT INTO `u841648456_dbfcp`.`setor_fundacao` (`nome`) VALUES ("BIBLIOTECA ARTHUR VIANA");
@@ -335,3 +324,22 @@ INSERT INTO `u841648456_dbfcp`.`setor_fundacao` (`nome`) VALUES ("CINE-TEATRO LI
 INSERT INTO `u841648456_dbfcp`.`setor_fundacao` (`nome`) VALUES ("NÚCLEO DE OFICINAS CURRO VELHO");
 INSERT INTO `u841648456_dbfcp`.`setor_fundacao` (`nome`) VALUES ("TEATRO MARGARIDA SCHIVASAPPA");
 INSERT INTO `u841648456_dbfcp`.`setor_fundacao` (`nome`) VALUES ("TEATRO EXPERIMENTAL WALDEMAR HENRIQUE");
+
+-- INSERÇÃO SUPER_USER
+INSERT INTO `u841648456_dbfcp`.`super_user` (`nome_usuario`, `login`, `senha`, `tipo_usuario`) VALUES ("ADMIN", "fcp_admin", "@fcpadmin123", 0);
+
+-- INSERÇÃO USER
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Gerente Artes", "gerente_artes", "gerente_artes123", 2, 0);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (2,1);
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Moderador Artes", "user_artes", "user_artes123", 1, 2);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (2,2);
+
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Gerente Linguagem", "gerente_linguagem", "gerente_clinguagem123",2, 0);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (3,3);
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Moderador Linguagem", "user_linguagem", "user_linguagem123", 1, 3);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (3,4);
+
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Gerente Cine", "gerente_cine", "gerente_cine123", 2, 0);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (5,5);
+INSERT INTO `u841648456_dbfcp`.`usuario_fundacao` (`nome_usuario`, `login`, `senha`, `tipo_usuario`, `id_gerente`) VALUES ("Moderador Cine", "user_cine", "user_cine123", 1, 1);
+INSERT INTO `u841648456_dbfcp`.`setor_usuario` (`id_setor`, `id_usuario`) VALUES (5,6);
