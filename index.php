@@ -21,14 +21,15 @@
     padding-top: 12%;
   }
 
-  .login_bg{
+  .login_bg {
     background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), #4e4e8e no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-  .label-danger{
+
+  .label-danger {
     color: white;
   }
 </style>
@@ -78,67 +79,147 @@
   <script src="dist/js/sb-admin-2.js"></script>
 
   <script type="text/javascript">
-  $('#limpaDados').click(function () {
-    $('#usuario').val('');
-    $('#senha').val('');
-  });
+    $('#limpaDados').click(function () {
+      $('#usuario').val('');
+      $('#senha').val('');
+    });
 
-  $("#acessarSistema").click(function () {
+    $(document).keypress(function (e) {
+      if (e.which == 13) {
+        $('#usuario').removeClass('label-danger');
+        $('#senha').removeClass('label-danger');
 
-    $('#usuario').removeClass('label-danger');
-    $('#senha').removeClass('label-danger');
+        var usuario = $('#usuario').val();
+        var senha = $('#senha').val();
 
-    var usuario = $('#usuario').val();
-    var senha = $('#senha').val();
+        if (usuario != "" && senha != "") {
+          $.ajax({
+            url: '<?php echo $project; ?>database/dbLogin.php',
+            type: 'POST',
+            data: {
+              'usuario': usuario,
+              'senha': senha,
+              action: 'login'
+            },
+            datatype: 'json',
+            start: function () {
+              var loading =
+                '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
+              $('#loader').append(loading);
+            },
+            success: function (data) {
 
-    if(usuario != "" && senha != "") {
-      $.ajax({
-        url: '<?php echo $project; ?>database/dbLogin.php',
-        type: 'POST',
-        data: {'usuario': usuario, 'senha': senha, action: 'login'},
-        datatype: 'json',
-        start: function () {
-          var loading = '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
-          $('#loader').append(loading);
-        },
-        success: function (data) {
+              $('#loader#overlay').remove();
+              if (data != null && data != "inexistente") {
 
-          $('#loader#overlay').remove();
-          if (data != null && data != "inexistente") {
+                var dataID = data.substring(0, 1);
+                var dataTipo = data.substring(2, 3);
+                var dataSetor = data.substring(4, 5);
+                var dataNome = data.substring(6);
 
-            var dataID = data.substring(0,1);
-            var dataTipo = data.substring(2,3);
-            var dataSetor = data.substring(4,5);
-            var dataNome = data.substring(6);
+                if (dataTipo == 0) {
+                  $.post('<?php echo $project; ?>sessions.php', {
+                    tipo_usuario: dataTipo,
+                    action: 'loginAdmin'
+                  }, function () {
+                    console.log("complete");
+                  });
+                  window.location.href = window.location.href + "view/admin/dash.php";
+                } else {
+                  $.post('<?php echo $project; ?>sessions.php', {
+                    id: dataID,
+                    nome: dataNome,
+                    setor: dataSetor,
+                    tipo_usuario: dataTipo,
+                    action: 'loginUser'
+                  }, function () {
+                    console.log("complete");
+                  });
+                  window.location.href = window.location.href + "view/public/dash.php";
+                }
 
-            if(dataTipo == 0)
-            {
-              $.post('<?php echo $project; ?>sessions.php', {tipo_usuario: dataTipo, action: 'loginAdmin'}, function() {
-                console.log("complete");
-              });
-              window.location.href = window.location.href + "view/admin/dash.php";
+              } else {
+                alert('Dados inválidos ou inexistentes!');
+                $('#usuario').val("");
+                $('#senha').val("");
+              }
             }
-            else
-            {
-              $.post('<?php echo $project; ?>sessions.php', {id: dataID, nome: dataNome, setor: dataSetor, tipo_usuario: dataTipo, action: 'loginUser'}, function() {
-                console.log("complete");
-              });
-              window.location.href = window.location.href + "view/public/dash.php";
-            }
-
-          } else {
-            alert('Dados inválidos ou inexistentes!');
-            $('#usuario').val("");
-            $('#senha').val("");
-          }
+          });
+        } else {
+          alert('Os campos não podem ficar em branco!');
+          $('#usuario').addClass('label-danger');
+          $('#senha').addClass('label-danger');
         }
-      });
-    } else{
-      alert('Os campos não podem ficar em branco!');
-      $('#usuario').addClass('label-danger');
-      $('#senha').addClass('label-danger');
-    }
-  })
+      }
+    });
+
+    $("#acessarSistema").click(function () {
+
+      $('#usuario').removeClass('label-danger');
+      $('#senha').removeClass('label-danger');
+
+      var usuario = $('#usuario').val();
+      var senha = $('#senha').val();
+
+      if (usuario != "" && senha != "") {
+        $.ajax({
+          url: '<?php echo $project; ?>database/dbLogin.php',
+          type: 'POST',
+          data: {
+            'usuario': usuario,
+            'senha': senha,
+            action: 'login'
+          },
+          datatype: 'json',
+          start: function () {
+            var loading =
+              '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
+            $('#loader').append(loading);
+          },
+          success: function (data) {
+
+            $('#loader#overlay').remove();
+            if (data != null && data != "inexistente") {
+
+              var dataID = data.substring(0, 1);
+              var dataTipo = data.substring(2, 3);
+              var dataSetor = data.substring(4, 5);
+              var dataNome = data.substring(6);
+
+              if (dataTipo == 0) {
+                $.post('<?php echo $project; ?>sessions.php', {
+                  tipo_usuario: dataTipo,
+                  action: 'loginAdmin'
+                }, function () {
+                  console.log("complete");
+                });
+                window.location.href = window.location.href + "view/admin/dash.php";
+              } else {
+                $.post('<?php echo $project; ?>sessions.php', {
+                  id: dataID,
+                  nome: dataNome,
+                  setor: dataSetor,
+                  tipo_usuario: dataTipo,
+                  action: 'loginUser'
+                }, function () {
+                  console.log("complete");
+                });
+                window.location.href = window.location.href + "view/public/dash.php";
+              }
+
+            } else {
+              alert('Dados inválidos ou inexistentes!');
+              $('#usuario').val("");
+              $('#senha').val("");
+            }
+          }
+        });
+      } else {
+        alert('Os campos não podem ficar em branco!');
+        $('#usuario').addClass('label-danger');
+        $('#senha').addClass('label-danger');
+      }
+    })
   </script>
 
 </body>

@@ -3,44 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ee0a82c-dbc7-4056-bf20-cde2b16b2946" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCasaArtes.php" afterPath="$PROJECT_DIR$/database/dbCasaArtes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCasaLinguagem.php" afterPath="$PROJECT_DIR$/database/dbCasaLinguagem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbCineLibero.php" afterPath="$PROJECT_DIR$/database/dbCineLibero.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/u841648456_dbfcp.sql" afterPath="$PROJECT_DIR$/database/u841648456_dbfcp.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sidebarAdmin.php" afterPath="$PROJECT_DIR$/includes/sidebarAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sidebarUser.php" afterPath="$PROJECT_DIR$/includes/sidebarUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/uriFormater.php" afterPath="$PROJECT_DIR$/includes/uriFormater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" afterPath="$PROJECT_DIR$/view/admin/casaArtes/eventos/modalArtes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/contatos/modalLinguagem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/admin/casaLinguagem/eventos/modalLinguagem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/contatos/modalCine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" afterPath="$PROJECT_DIR$/view/admin/cineLibero/eventos/modalCine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/setores/listar.php" afterPath="$PROJECT_DIR$/view/admin/setores/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/setores/modalSetores.php" afterPath="$PROJECT_DIR$/view/admin/setores/modalSetores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/usuarios/listar.php" afterPath="$PROJECT_DIR$/view/admin/usuarios/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" afterPath="$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/contatos/modalArtes.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/contatos/modalArtes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaArtes/eventos/modalArtes.php" afterPath="$PROJECT_DIR$/view/public/casaArtes/eventos/modalArtes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/contatos/modalLinguagem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/modalLinguagem.php" afterPath="$PROJECT_DIR$/view/public/casaLinguagem/eventos/modalLinguagem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/contatos/modalCine.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/contatos/modalCine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/cineLibero/eventos/modalCine.php" afterPath="$PROJECT_DIR$/view/public/cineLibero/eventos/modalCine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/usuarios/listar.php" afterPath="$PROJECT_DIR$/view/public/usuarios/listar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" afterPath="$PROJECT_DIR$/view/public/usuarios/modalUsuario.php" />
     </list>
     <ignored path="FCP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +22,28 @@
     <favorites_list name="FCP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dash.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/admin/dash.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,9 +121,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -153,7 +136,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -166,44 +149,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FCP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -293,18 +239,21 @@
       <workItem from="1485786308205" duration="6428000" />
       <workItem from="1485806147051" duration="4667000" />
       <workItem from="1485871747320" duration="1392000" />
+      <workItem from="1486503513980" duration="47000" />
+      <workItem from="1486592162572" duration="2000000" />
+      <workItem from="1487277863473" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62403000" />
+    <option name="totallyTimeSpent" value="64479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -322,6 +271,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -360,20 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/uriFormater.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/dbConexao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -392,13 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="331" column="173" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sessions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -475,20 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/dbLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="117" column="17" selection-start-line="115" selection-start-column="14" selection-end-line="117" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/admin/usuarios/modalUsuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -521,13 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
           <caret line="119" column="135" selection-start-line="119" selection-start-column="135" selection-end-line="119" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebarUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="89" column="77" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -570,13 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/dash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -643,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/admin/casaArtes/contatos/modalArtes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1420">
@@ -664,42 +577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sidebarAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/dbCasaLinguagem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
-          <folding>
-            <marker date="1485873826000" expanded="true" signature="365:484" ph="Select id_ev... evento_casa_artes" />
-            <marker date="1485873826000" expanded="true" signature="781:921" ph="Select id_ev... evento_casa_artes" />
-            <marker date="1485873826000" expanded="true" signature="1254:1545" ph="INSERT INTO evento_casa_artes" />
-            <marker date="1485873826000" expanded="true" signature="1383:1448" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873826000" expanded="true" signature="1933:2055" ph="UPDATE event... " />
-            <marker date="1485873826000" expanded="true" signature="2098:2289" ph="UPDATE event... " />
-            <marker date="1485873826000" expanded="true" signature="2519:2571" ph="Delete From " />
-            <marker date="1485873826000" expanded="true" signature="2937:3047" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485873826000" expanded="true" signature="2981:3046" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873826000" expanded="true" signature="3347:3499" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485873826000" expanded="true" signature="3823:4082" ph="INSERT INTO contato_setor" />
-            <marker date="1485873826000" expanded="true" signature="3947:4012" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873826000" expanded="true" signature="4339:4493" ph="UPDATE conta... " />
-            <marker date="1485873826000" expanded="true" signature="4720:4875" ph="Delete From " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,15 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <marker date="1485801025000" expanded="true" signature="413:441" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801025000" expanded="true" signature="720:764" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801025000" expanded="true" signature="1059:1106" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801025000" expanded="true" signature="1059:1119" ph="Select * fro... setor_fundacao" />
-            <marker date="1485801025000" expanded="true" signature="1395:1445" ph="INSERT INTO setor_fundacao... " />
-            <marker date="1485801025000" expanded="true" signature="1670:1726" ph="UPDATE setor... " />
-            <marker date="1485801025000" expanded="true" signature="1932:1976" ph="Delete From " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,22 +596,6 @@
         <state relative-caret-position="720">
           <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
           <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-          <folding>
-            <marker date="1485873773000" expanded="true" signature="357:484" ph="Select id_ev... evento_casa_artes" />
-            <marker date="1485873773000" expanded="true" signature="777:921" ph="Select id_ev... evento_casa_artes" />
-            <marker date="1485873773000" expanded="true" signature="1258:1561" ph="INSERT INTO evento_casa_artes" />
-            <marker date="1485873773000" expanded="true" signature="1392:1453" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873773000" expanded="true" signature="1949:2087" ph="UPDATE event... " />
-            <marker date="1485873773000" expanded="true" signature="2130:2337" ph="UPDATE event... " />
-            <marker date="1485873773000" expanded="true" signature="2563:2611" ph="Delete From " />
-            <marker date="1485873773000" expanded="true" signature="2973:3079" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485873773000" expanded="true" signature="3017:3078" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873773000" expanded="true" signature="3375:3523" ph="SELECT * FRO... contato_setor" />
-            <marker date="1485873773000" expanded="true" signature="3843:4098" ph="INSERT INTO contato_setor" />
-            <marker date="1485873773000" expanded="true" signature="3967:4028" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873773000" expanded="true" signature="4351:4505" ph="UPDATE conta... " />
-            <marker date="1485873773000" expanded="true" signature="4728:4879" ph="Delete From " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,23 +603,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding>
-            <marker date="1485873634000" expanded="true" signature="357:364" ph="Select * fro... evento_cinema" />
-            <marker date="1485873634000" expanded="true" signature="357:530" ph="Select id_ev... evento_cinema" />
-            <marker date="1485873634000" expanded="true" signature="822:1026" ph="Select id_ev... evento_cinema" />
-            <marker date="1485873634000" expanded="true" signature="1378:1717" ph="INSERT INTO evento_cinema" />
-            <marker date="1485873634000" expanded="true" signature="1528:1588" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873634000" expanded="true" signature="2101:2289" ph="UPDATE event... " />
-            <marker date="1485873634000" expanded="true" signature="2332:2572" ph="UPDATE event... " />
-            <marker date="1485873634000" expanded="true" signature="2796:2840" ph="Delete From " />
-            <marker date="1485873634000" expanded="true" signature="3201:3306" ph="Select * fro... contato_setor" />
-            <marker date="1485873634000" expanded="true" signature="3245:3305" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873634000" expanded="true" signature="3601:3748" ph="Select * fro... contato_setor" />
-            <marker date="1485873634000" expanded="true" signature="4067:4319" ph="INSERT INTO contato_setor" />
-            <marker date="1485873634000" expanded="true" signature="4189:4249" ph="Select id_se... setor_fundacao" />
-            <marker date="1485873634000" expanded="true" signature="4571:4725" ph="UPDATE conta... " />
-            <marker date="1485873634000" expanded="true" signature="4947:5096" ph="Delete From " />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebarUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2136">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebarAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/uriFormater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-788">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sessions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/dbLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/dash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

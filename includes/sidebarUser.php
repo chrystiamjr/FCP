@@ -21,7 +21,7 @@
     <a href="#" id="ShowHide" class="navbar-brand" style="font-size: 30px;margin: 20 -10 0 5;color: white;">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
-    <a class="navbar-brand" href="<?php echo $project; ?>" style="color: #f3f3f3;height: auto;padding-top: 10px">
+    <a class="navbar-brand" href="<?php echo $project; ?>view/public/dash.php" style="color: #f3f3f3;height: auto;padding-top: 10px">
       <img src="<?php echo $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto">
     </a>
   </div>

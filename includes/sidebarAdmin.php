@@ -4,7 +4,6 @@
   }
 </style>
 
-
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #4e4e8e;">
   <button class="btn btn-danger pull-right" id="btnSair" style="margin-right: 20px;margin-top: 35;padding: 8 10;border-radius: 50">
