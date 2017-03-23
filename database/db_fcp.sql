@@ -105,7 +105,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_cinema` (
   `programacao_regular` VARCHAR(80) NOT NULL,
   `projetos` VARCHAR(80) NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_CineLibero_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_CineLibero_setor_fundacao1`
@@ -127,7 +128,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_biblioteca` (
   `nome` VARCHAR(255) NOT NULL,
   `descricao` VARCHAR(255) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NULL,
+  `preco` VARCHAR(80) NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Biblioteca_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Biblioteca_setor_fundacao1`
@@ -150,7 +152,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_centro` (
   `descricao` VARCHAR(255) NOT NULL,
   `local` VARCHAR(80) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_CIN_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_CIN_setor_fundacao1`
@@ -172,7 +175,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_teatro_margarida` (
   `nome` VARCHAR(80) NOT NULL,
   `descricao` VARCHAR(255) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Teatro Margarida_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Teatro Margarida_setor_fundacao1`
@@ -194,7 +198,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_teatro_waldemar` (
   `nome` VARCHAR(80) NOT NULL,
   `decricao` VARCHAR(255) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Teatro Waldemar_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Teatro Waldemar_setor_fundacao1`
@@ -216,7 +221,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_casa_linguagem` (
   `nome` VARCHAR(80) NOT NULL,
   `descricao` VARCHAR(255) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Casa da Linguagem_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Casa da Linguagem_setor_fundacao1`
@@ -239,7 +245,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_curro_velho` (
   `descricao` VARCHAR(255) NOT NULL,
   `oficina` VARCHAR(80) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Curro Velho_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Curro Velho_setor_fundacao1`
@@ -262,7 +269,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_casa_artes` (
   `descricao` VARCHAR(255) NOT NULL,
   `oficina` VARCHAR(80) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NULL,
+  `preco` VARCHAR(80) NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Casa das Artes_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Casa das Artes_setor_fundacao1`
@@ -284,7 +292,8 @@ CREATE TABLE IF NOT EXISTS `db_fcp`.`evento_galeria` (
   `nome` VARCHAR(45) NOT NULL,
   `descricao` VARCHAR(45) NOT NULL,
   `horario` DATETIME NOT NULL,
-  `preco` FLOAT NOT NULL,
+  `preco` VARCHAR(80) NOT NULL,
+  `imagem` BLOB,
   PRIMARY KEY (`id_evento`, `id_setor`),
   INDEX `fk_Galeria_setor_fundacao1_idx` (`id_setor` ASC),
   CONSTRAINT `fk_Galeria_setor_fundacao1`
