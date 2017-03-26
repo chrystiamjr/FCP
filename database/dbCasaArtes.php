@@ -13,9 +13,16 @@ class dbCasaArtes
   // ----------------------------------------------------------------------------------------------------------------- //
   // Sessão EVENTOS //
 
+  protected function formatarImgText($txt){
+    $text = explode("/",$txt);
+    $text = $text[count($text)-1]; // retorna o ultimo elemento do array
+    $text = explode(".",$text);
+    return $text[0];
+  }
+
   public function listarTodosEventosArtes()
   {
-    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes";
+    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem from evento_casa_artes";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,7 +35,7 @@ class dbCasaArtes
 
   public function listarUmEventoArtes($idEvento)
   {
-    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes WHERE id_evento={$idEvento}";
+    $query = "Select id_evento,id_setor,nome,descricao,oficina,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem from evento_casa_artes WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -40,14 +47,15 @@ class dbCasaArtes
 
   }//listarUmEvento
 
-  public function cadastrarEventoArtes($nome, $descricao, $ofina, $horario, $preco)
+  public function cadastrarEventoArtes($nome, $descricao, $ofina, $horario, $preco, $imagem)
   {
 
     $query = "INSERT INTO 
-              evento_casa_artes(id_setor, nome, descricao, oficina, horario,preco) 
+              evento_casa_artes(id_setor, nome, descricao, oficina, horario, preco, imagem) 
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%ARTES%'),
-              '{$nome}', '{$descricao}', '{$ofina}',STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), {$preco});";
+              '{$nome}', '{$descricao}', '{$ofina}', STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), '{$preco}', '{$imagem}');";
+              // die($query);
 
 //    die($query);
     $result = $this->conn->exec($query);
@@ -59,17 +67,17 @@ class dbCasaArtes
 
   }//cadastrarEvento
 
-  public function alterarEventoArtes($idEvento, $nome, $descricao, $ofina, $horario, $preco)
+  public function alterarEventoArtes($idEvento, $nome, $descricao, $ofina, $horario, $preco, $imagem)
   {
     $data = $this->listarUmEventoArtes($idEvento);
     $hr = $data[0]['horario'];
 
     if ($horario == $hr) {
-      $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', oficina='{$ofina}', preco={$preco}
+      $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', oficina='{$ofina}', preco='{$preco}', imagem='{$imagem}'
                 WHERE id_evento={$idEvento}";
     } else {
       $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', oficina='{$ofina}', 
-                horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco={$preco}
+                horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco='{$preco}', imagem='{$imagem}'
                 WHERE id_evento={$idEvento}";
     }
 
@@ -84,7 +92,7 @@ class dbCasaArtes
 
   public function removerEventoArtes($idEvento)
   {
-    $query = "Delete From evento_casa_artes WHERE id_evento = {$idEvento}";
+    $query = "Delete From evento_casa_artes WHERE id_evento={$idEvento}";
     $result = $this->conn->exec($query);
     if ($result) {
       return true;

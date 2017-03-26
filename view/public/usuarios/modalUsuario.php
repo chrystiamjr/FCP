@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -42,7 +42,7 @@
             <label for="gerente" class="col-sm-2 control-label">Gerente:</label>
             <div class="col-sm-10">
               <select id="gerente" class="form-control" name="gerente" required>
-                <option value="<?php echo $dataGerente[0]['id_usuario']; ?>"><?php echo $dataGerente[0]['nome_usuario'] ?></option>
+                <option value="<?= $dataGerente[0]['id_usuario']; ?>"><?= $dataGerente[0]['nome_usuario'] ?></option>
               </select>
             </div>
           </div>
@@ -50,7 +50,7 @@
             <label for="setor" class="col-sm-2 control-label">Setor:</label>
             <div class="col-sm-10">
               <select id="setor" class="form-control" name="setor" required>
-                <option value="<?php echo $dataSetor[0]['id_setor']; ?>"><?php echo $dataSetor[0]['nome'] ?></option>
+                <option value="<?= $dataSetor[0]['id_setor']; ?>"><?= $dataSetor[0]['nome'] ?></option>
               </select>
             </div>
           </div>
@@ -79,7 +79,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -117,7 +117,7 @@
                 <label for="gerente" class="col-sm-2 control-label">Gerente:</label>
                 <div class="col-sm-10">
                   <select id="gerente" class="form-control gerenteAlterar" name="gerente" required>
-                    <option value="<?php echo $dataGerente[0]['id_usuario']; ?>"><?php echo $dataGerente[0]['nome_usuario'] ?></option>
+                    <option value="<?= $dataGerente[0]['id_usuario']; ?>"><?= $dataGerente[0]['nome_usuario'] ?></option>
                   </select>
                 </div>
 <!--              </div>-->
@@ -148,7 +148,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">

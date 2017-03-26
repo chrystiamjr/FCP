@@ -21,8 +21,8 @@
     <a href="#" id="ShowHide" class="navbar-brand" style="font-size: 30px;margin: 20 -10 0 5;color: white;">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
-    <a class="navbar-brand" href="<?php echo $project; ?>view/public/dash.php" style="color: #f3f3f3;height: auto;padding-top: 10px">
-      <img src="<?php echo $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto">
+    <a class="navbar-brand" href="<?= $project; ?>view/public/dash.php" style="color: #f3f3f3;height: auto;padding-top: 10px">
+      <img src="<?= $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto">
     </a>
   </div>
   <!-- /.navbar-header -->
@@ -39,17 +39,17 @@
 
             <li class="text-center">
               <?php if ($_SESSION['id_setor'] == '2') { ?>
-                <a href="<?php echo $project; ?>view/public/casaArtes/contatos/listar.php">
+                <a href="<?= $project; ?>view/public/casaArtes/contatos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                   <br/> Casa das Artes
                 </a>
               <?php } elseif ($_SESSION['id_setor'] == '3') { ?>
-                <a href="<?php echo $project; ?>view/public/casaLinguagem/contatos/listar.php">
+                <a href="<?= $project; ?>view/public/casaLinguagem/contatos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                   <br/> Casa da Linguagem
                 </a>
               <?php } elseif ($_SESSION['id_setor'] == '5') { ?>
-                <a href="<?php echo $project; ?>view/public/cineLibero/contatos/listar.php">
+                <a href="<?= $project; ?>view/public/cineLibero/contatos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                   <br/> Cine-Teatro Libero Luxardo
                 </a>
@@ -66,17 +66,17 @@
 
             <li class="text-center">
               <?php if ($_SESSION['id_setor'] == '2') { ?>
-                <a href="<?php echo $project; ?>view/public/casaArtes/eventos/listar.php">
+                <a href="<?= $project; ?>view/public/casaArtes/eventos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                   <br/> Casa das Artes
                 </a>
               <?php } elseif ($_SESSION['id_setor'] == '3') { ?>
-                <a href="<?php echo $project; ?>view/public/casaLinguagem/eventos/listar.php">
+                <a href="<?= $project; ?>view/public/casaLinguagem/eventos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                   <br/> Casa da Linguagem
                 </a>
               <?php } elseif ($_SESSION['id_setor'] == '5') { ?>
-                <a href="<?php echo $project; ?>view/public/cineLibero/eventos/listar.php">
+                <a href="<?= $project; ?>view/public/cineLibero/eventos/listar.php">
                   <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                   <br/> Cine-Teatro Libero Luxardo
                 </a>
@@ -92,7 +92,7 @@
           <ul class="nav nav-second-level">
 
             <li>
-              <a href="<?php echo $project; ?>view/public/usuarios/listar.php">
+              <a href="<?= $project; ?>view/public/usuarios/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Usuários
               </a>
             </li>

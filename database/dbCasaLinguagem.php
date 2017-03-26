@@ -13,9 +13,17 @@ class dbCasaLinguagem
   // ----------------------------------------------------------------------------------------------------------------- //
   // Sessão EVENTOS //
 
+  protected function formatarImgText($txt)
+  {
+    $text = explode("/",$txt);
+    $text = $text[count($text)-1]; // retorna o ultimo elemento do array
+    $text = explode(".",$text);
+    return $text[0];
+  }
+
   public function listarTodosEventosLinguagem()
   {
-    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_artes";
+    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem from evento_casa_linguagem";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,7 +36,7 @@ class dbCasaLinguagem
 
   public function listarUmEventoLinguagem($idEvento)
   {
-    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco from evento_casa_linguagem WHERE id_evento={$idEvento}";
+    $query = "Select id_evento,id_setor,nome,descricao,date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem from evento_casa_linguagem WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -40,14 +48,14 @@ class dbCasaLinguagem
 
   }//listarUmEvento
 
-  public function cadastrarEventoLinguagem($nome, $descricao, $horario, $preco)
+  public function cadastrarEventoLinguagem($nome, $descricao, $horario, $preco, $imagem)
   {
 
     $query = "INSERT INTO 
-              evento_casa_linguagem(id_setor, nome, descricao, horario,preco) 
+              evento_casa_linguagem(id_setor, nome, descricao, horario, preco, imagem) 
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%LINGUAGEM%'),
-              '{$nome}', '{$descricao}', STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), {$preco});";
+              '{$nome}', '{$descricao}', STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), '{$preco}', '{$imagem}');";
 
 //    die($query);
     $result = $this->conn->exec($query);
@@ -59,17 +67,17 @@ class dbCasaLinguagem
 
   }//cadastrarEvento
 
-  public function alterarEventoLinguagem($idEvento, $nome, $descricao, $horario, $preco)
+  public function alterarEventoLinguagem($idEvento, $nome, $descricao, $horario, $preco, $imagem)
   {
     $data = $this->listarUmEventoLinguagem($idEvento);
     $hr = $data[0]['horario'];
 
     if ($horario == $hr) {
-      $query = "UPDATE evento_casa_linguagem SET nome='{$nome}', descricao='{$descricao}', preco={$preco}
+      $query = "UPDATE evento_casa_linguagem SET nome='{$nome}', descricao='{$descricao}', preco='{$preco}', imagem='{$imagem}'
                 WHERE id_evento={$idEvento}";
     } else {
       $query = "UPDATE evento_casa_linguagem SET nome='{$nome}', descricao='{$descricao}', 
-                horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco={$preco}
+                horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco='{$preco}', imagem='{$imagem}'
                 WHERE id_evento={$idEvento}";
     }
 

@@ -25,8 +25,8 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
     float: right;
   }
 </style>
-<link rel="stylesheet" href="<?php echo $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="<?php echo $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
+<link rel="stylesheet" href="<?= $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="<?= $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
 
 <body>
 
@@ -39,7 +39,7 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
 
         <div class="pull-right breadcumberbach">
           <ol class="breadcrumb">
-            <li><a href="<?php echo $project; ?>view/public/dash.php">Dashboard</a></li>
+            <li><a href="<?= $project; ?>view/public/dash.php">Dashboard</a></li>
             <li class="active">Gerenciar Eventos</li>
           </ol>
         </div>
@@ -89,25 +89,25 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
             <?php if ($linguagem->listarTodosEventosLinguagem() != null || $linguagem->listarTodosEventosLinguagem() != false) {
               foreach ($linguagem->listarTodosEventosLinguagem() as $data) { ?>
                 <tr>
-                  <td style="text-align:center;width:50;vertical-align:middle"><?php echo $data['id_evento'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['nome'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['descricao'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['horario'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle">R$ <?php echo $data['preco'] ?></td>
+                  <td style="text-align:center;width:50;vertical-align:middle"><?= $data['id_evento'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['nome'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['descricao'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['horario'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle">R$ <?= $data['preco'] ?></td>
                   <td style="text-align:center;width:100;vertical-align:middle">
                     <button type="button" class="btn btn-primary alterar"
                             style="width:30;height:30;border-radius:50%;padding:0;margin-right: 10px"
                             data-toggle="modal" data-target="#alteracaoModal">
-                      <input class="id" type="hidden" value="<?php echo $data['id_evento'] ?>">
-                      <input class="nome" type="hidden" value="<?php echo $data['nome'] ?>">
-                      <input class="descricao" type="hidden" value="<?php echo $data['descricao'] ?>">
-                      <input class="horario" type="hidden" value="<?php echo $data['horario'] ?>">
-                      <input class="preco" type="hidden" value="<?php echo $data['preco'] ?>">
+                      <input class="id" type="hidden" value="<?= $data['id_evento'] ?>">
+                      <input class="nome" type="hidden" value="<?= $data['nome'] ?>">
+                      <input class="descricao" type="hidden" value="<?= $data['descricao'] ?>">
+                      <input class="horario" type="hidden" value="<?= $data['horario'] ?>">
+                      <input class="preco" type="hidden" value="<?= $data['preco'] ?>">
                       <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar"></i>
                     </button>
                     <button type="button" class="btn btn-danger remover" style="width:30;height:30;border-radius:50%;padding:0"
                             data-toggle="modal" data-target="#remocaoModal">
-                      <input class="id" type="hidden" value="<?php echo $data['id_evento'] ?>">
+                      <input class="id" type="hidden" value="<?= $data['id_evento'] ?>">
                       <i class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Remover"></i>
                     </button>
                   </td>
@@ -125,8 +125,8 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
   </div>
 
   <?php include_once "../../../../includes/scripts.php"; ?>
-  <script type="text/javascript" src="<?php echo $project; ?>vendor/datatables/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="<?php echo $project; ?>vendor/datatables/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?= $project; ?>vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="<?= $project; ?>vendor/datatables/js/dataTables.bootstrap.min.js"></script>
 
   <script>
     $(document).ready(function () {

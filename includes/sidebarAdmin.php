@@ -21,8 +21,8 @@
     <a href="#" id="ShowHide" class="navbar-brand" style="font-size: 30px;margin: 20 -10 0 5;color: white;">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
-    <a class="navbar-brand" href="<?php echo $project; ?>view/admin/dash.php" style="color: #f3f3f3;height: auto;padding-top: 10px">
-      <img src="<?php echo $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto">
+    <a class="navbar-brand" href="<?= $project; ?>view/admin/dash.php" style="color: #f3f3f3;height: auto;padding-top: 10px">
+      <img src="<?= $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto">
     </a>
   </div>
   <!-- /.navbar-header -->
@@ -37,21 +37,21 @@
           <ul class="nav nav-second-level">
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/casaArtes/contatos/listar.php">
+              <a href="<?= $project; ?>view/admin/casaArtes/contatos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                 <br/> Casa das Artes
               </a>
             </li>
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/casaLinguagem/contatos/listar.php">
+              <a href="<?= $project; ?>view/admin/casaLinguagem/contatos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                 <br/> Casa da Linguagem
               </a>
             </li>
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/cineLibero/contatos/listar.php">
+              <a href="<?= $project; ?>view/admin/cineLibero/contatos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Contatos
                 <br/> Cine-Teatro Libero Luxardo
               </a>
@@ -65,21 +65,21 @@
           <ul class="nav nav-second-level">
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/casaArtes/eventos/listar.php">
+              <a href="<?= $project; ?>view/admin/casaArtes/eventos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                 <br/> Casa das Artes
               </a>
             </li>
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/casaLinguagem/eventos/listar.php">
+              <a href="<?= $project; ?>view/admin/casaLinguagem/eventos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                 <br/> Casa da Linguagem
               </a>
             </li>
 
             <li class="text-center">
-              <a href="<?php echo $project; ?>view/admin/cineLibero/eventos/listar.php">
+              <a href="<?= $project; ?>view/admin/cineLibero/eventos/listar.php">
                 <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Eventos
                 <br/> Cine-Teatro Libero Luxardo
               </a>
@@ -93,7 +93,7 @@
           <ul class="nav nav-second-level">
 
             <li>
-              <a href="<?php echo $project; ?>view/admin/setores/listar.php">
+              <a href="<?= $project; ?>view/admin/setores/listar.php">
                <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Setores
               </a>
             </li>
@@ -106,7 +106,7 @@
           <ul class="nav nav-second-level">
 
             <li>
-              <a href="<?php echo $project; ?>view/admin/usuarios/listar.php">
+              <a href="<?= $project; ?>view/admin/usuarios/listar.php">
                <i class="fa fa-asterisk" aria-hidden="true"></i> Gerenciar Usuários
               </a>
             </li>

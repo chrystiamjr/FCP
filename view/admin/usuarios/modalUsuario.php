@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="cadastro">
@@ -45,7 +45,7 @@
               <select id="gerente" class="form-control" name="gerente" required>
                 <option></option>
                 <?php foreach ($user->listarIDGerente(2) as $data2) { ?>
-                  <option value="<?php echo $data2["id_usuario"]; ?>"><?php echo $data2["nome_usuario"]; ?></option>
+                  <option value="<?= $data2["id_usuario"]; ?>"><?= $data2["nome_usuario"]; ?></option>
                 <?php } ?>
               </select>
             </div>
@@ -56,7 +56,7 @@
               <select id="setor" class="form-control" name="setor" required>
                 <option></option>
                 <?php foreach ($user->listarSetoresUsuario() as $data3) { ?>
-                  <option value="<?php echo $data3["id_setor"]; ?>"><?php echo $data3["nome"]; ?></option>
+                  <option value="<?= $data3["id_setor"]; ?>"><?= $data3["nome"]; ?></option>
                 <?php } ?>
               </select>
             </div>
@@ -86,7 +86,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="alteracao">
@@ -127,7 +127,7 @@
                   <select id="gerente" class="form-control gerenteAlterar" name="gerente" required>
                     <option></option>
                     <?php foreach ($user->listarIDGerente(2) as $data2) { ?>
-                      <option value="<?php echo $data2["id_usuario"]; ?>"><?php echo $data2["nome_usuario"]; ?></option>
+                      <option value="<?= $data2["id_usuario"]; ?>"><?= $data2["nome_usuario"]; ?></option>
                     <?php } ?>
                   </select>
                 </div>
@@ -159,7 +159,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Usuário</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/UsuarioCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/UsuarioCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="remocao">

@@ -13,10 +13,18 @@ class dbCineLibero
   // ----------------------------------------------------------------------------------------------------------------- //
   // Sessão EVENTOS //
 
+  protected function formatarImgText($txt)
+  {
+    $text = explode("/",$txt);
+    $text = $text[count($text)-1]; // retorna o ultimo elemento do array
+    $text = explode(".",$text);
+    return $text[0];
+  }
+
   public function listarTodosEventosCine()
   {
     $query = "Select id_evento,id_setor,nome,descricao,programacao_regular,projetos,
-              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco
+              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem
               from evento_cinema";
     $stmt = $this->conn->query($query);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -31,7 +39,7 @@ class dbCineLibero
   public function listarUmEventoCine($idEvento)
   {
     $query = "Select id_evento,id_setor,nome,descricao,programacao_regular,projetos,
-              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco
+              date_format(horario, '%d/%m/%Y %H:%i') as horario,preco,imagem
               from evento_cinema
               WHERE id_evento={$idEvento}";
     $stmt = $this->conn->query($query);
@@ -45,13 +53,13 @@ class dbCineLibero
 
   }//listarUmEvento
 
-  public function cadastrarEventoCine($nome, $descricao, $progRegular, $projetos, $horario, $preco)
+  public function cadastrarEventoCine($nome, $descricao, $progRegular, $projetos, $horario, $preco, $imagem)
   {
     $query = "INSERT INTO
-              evento_cinema(id_setor, nome, descricao, programacao_regular, projetos, horario,preco)
+              evento_cinema(id_setor, nome, descricao, programacao_regular, projetos, horario,preco, imagem)
               VALUES
               ((Select id_setor FROM setor_fundacao WHERE nome LIKE '%CINE%'),
-              '{$nome}', '{$descricao}', '{$progRegular}', '{$projetos}',STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), {$preco});";
+              '{$nome}', '{$descricao}', '{$progRegular}', '{$projetos}',STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), '{$preco}', '{$imagem}');";
 
     $result = $this->conn->exec($query);
     if ($result) {
@@ -62,18 +70,18 @@ class dbCineLibero
 
   }//cadastrarEvento
 
-  public function alterarEventoCine($idEvento, $nome, $descricao, $progRegular, $projetos, $horario, $preco)
+  public function alterarEventoCine($idEvento, $nome, $descricao, $progRegular, $projetos, $horario, $preco, $imagem)
   {
     $data = $this->listarUmEventoCine($idEvento);
     $hr = $data[0]['horario'];
 
     if ($horario == $hr) {
       $query = "UPDATE evento_cinema SET nome='{$nome}', descricao='{$descricao}', programacao_regular='{$progRegular}',
-              projetos='{$projetos}', preco={$preco}
+              projetos='{$projetos}', preco='{$preco}', imagem='{$imagem}'
               WHERE id_evento={$idEvento}";
     } else {
       $query = "UPDATE evento_cinema SET nome='{$nome}', descricao='{$descricao}', programacao_regular='{$progRegular}',
-              projetos='{$projetos}', horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco={$preco}
+              projetos='{$projetos}', horario=STR_TO_DATE('{$horario}','%d-%m-%Y %H:%i'), preco='{$preco}', imagem='{$imagem}'
               WHERE id_evento={$idEvento}";
     }
     $result = $this->conn->exec($query);

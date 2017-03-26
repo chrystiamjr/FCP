@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Contato</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -64,7 +64,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Contato</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -121,7 +121,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Contato</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">

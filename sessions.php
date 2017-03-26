@@ -10,6 +10,7 @@ if (isset($_POST['action']) && !empty($_POST['action'])) {
     case 'loginAdmin' :
       $_SESSION['tipo_usuario'] = $_POST['tipo_usuario'];
       echo "inset";
+      die($_SESSION['tipo_usuario']);
       break;
 
     case 'loginUser' :

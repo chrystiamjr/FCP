@@ -41,7 +41,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <img src="<?php echo $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto" style="margin-top:45%">
+        <img src="<?= $project; ?>img/logo-fcp.png" alt="FCP" width="400" height="auto" style="margin-top:45%">
         <div class="login-panel panel panel-default" style="margin-top: 5%;">
           <div class="panel-heading" style="background-color: #4e4e8e; color:white">
             <h3 class="panel-title" style="text-align:center">Fundação Cultural do Pará - Login</h3>
@@ -94,7 +94,7 @@
 
         if (usuario != "" && senha != "") {
           $.ajax({
-            url: '<?php echo $project; ?>database/dbLogin.php',
+            url: '<?= $project; ?>database/dbLogin.php',
             type: 'POST',
             data: {
               'usuario': usuario,
@@ -104,7 +104,7 @@
             datatype: 'json',
             start: function () {
               var loading =
-                '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
+                '<div id="overlay"><img src="<?= $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
               $('#loader').append(loading);
             },
             success: function (data) {
@@ -118,24 +118,36 @@
                 var dataNome = data.substring(6);
 
                 if (dataTipo == 0) {
-                  $.post('<?php echo $project; ?>sessions.php', {
-                    tipo_usuario: dataTipo,
-                    action: 'loginAdmin'
-                  }, function () {
-                    console.log("complete");
+                  $.ajax({
+                    url: '<?= $project; ?>sessions.php',
+                    type: 'POST',
+                    data: {
+                      tipo_usuario: dataTipo,
+                      action: 'loginAdmin'
+                    },
+                    datatype: 'json',
+                    success: function () {
+                      console.log("complete");
+                      window.location.href = window.location.href + "view/admin/dash.php";
+                    }
                   });
-                  window.location.href = window.location.href + "view/admin/dash.php";
                 } else {
-                  $.post('<?php echo $project; ?>sessions.php', {
-                    id: dataID,
-                    nome: dataNome,
-                    setor: dataSetor,
-                    tipo_usuario: dataTipo,
-                    action: 'loginUser'
-                  }, function () {
-                    console.log("complete");
+                  $.ajax({
+                    url: '<?= $project; ?>sessions.php',
+                    type: 'POST',
+                    data: {
+                      id: dataID,
+                      nome: dataNome,
+                      setor: dataSetor,
+                      tipo_usuario: dataTipo,
+                      action: 'loginUser'
+                    },
+                    datatype: 'json',
+                    success: function () {
+                      console.log("complete");
+                      window.location.href = window.location.href + "view/public/dash.php";
+                    }
                   });
-                  window.location.href = window.location.href + "view/public/dash.php";
                 }
 
               } else {
@@ -163,7 +175,7 @@
 
       if (usuario != "" && senha != "") {
         $.ajax({
-          url: '<?php echo $project; ?>database/dbLogin.php',
+          url: '<?= $project; ?>database/dbLogin.php',
           type: 'POST',
           data: {
             'usuario': usuario,
@@ -173,7 +185,7 @@
           datatype: 'json',
           start: function () {
             var loading =
-              '<div id="overlay"><img src="<?php echo $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
+              '<div id="overlay"><img src="<?= $project; ?>img/spinner/loader.gif" alt="Loading" /><br/></div>';
             $('#loader').append(loading);
           },
           success: function (data) {
@@ -187,24 +199,36 @@
               var dataNome = data.substring(6);
 
               if (dataTipo == 0) {
-                $.post('<?php echo $project; ?>sessions.php', {
-                  tipo_usuario: dataTipo,
-                  action: 'loginAdmin'
-                }, function () {
-                  console.log("complete");
+                $.ajax({
+                  url: '<?= $project; ?>sessions.php',
+                  type: 'POST',
+                  data: {
+                    tipo_usuario: dataTipo,
+                    action: 'loginAdmin'
+                  },
+                  datatype: 'json',
+                  success: function () {
+                    console.log("complete");
+                    window.location.href = window.location.href + "view/admin/dash.php";
+                  }
                 });
-                window.location.href = window.location.href + "view/admin/dash.php";
               } else {
-                $.post('<?php echo $project; ?>sessions.php', {
-                  id: dataID,
-                  nome: dataNome,
-                  setor: dataSetor,
-                  tipo_usuario: dataTipo,
-                  action: 'loginUser'
-                }, function () {
-                  console.log("complete");
+                $.ajax({
+                  url: '<?= $project; ?>sessions.php',
+                  type: 'POST',
+                  data: {
+                    id: dataID,
+                    nome: dataNome,
+                    setor: dataSetor,
+                    tipo_usuario: dataTipo,
+                    action: 'loginUser'
+                  },
+                  datatype: 'json',
+                  success: function () {
+                    console.log("complete");
+                    window.location.href = window.location.href + "view/public/dash.php";
+                  }
                 });
-                window.location.href = window.location.href + "view/public/dash.php";
               }
 
             } else {

@@ -1,0 +1,134 @@
+html, body 
+{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 200px) 
+{
+  div.navbar-default.sidebar
+  {
+    margin-top: 0 !important;
+  }
+  
+  div.pull-right.breadcumberbach
+  {
+    margin: -40 0 0 0 !important;
+  }
+  
+  #ShowHide
+  {
+    display: none;
+  }
+  
+  select,
+  textarea,
+  input 
+  {
+    font-size: 16px;
+  }
+  
+  .midlle-content 
+  {
+    margin-top: 40 !important
+  }
+
+  .botao-fechar,
+  .botao-alterar,
+  .botao-cadastro,
+  .botao-remover
+  {
+    padding: 6 30;
+  }
+}
+
+@media screen and (min-width: 768px) 
+{
+  #ShowHide
+  {
+    display: none;
+  }
+
+  div.pull-right.breadcumberbach
+  {
+    margin: -40 0 0 0 !important;
+  }
+
+  select,
+  textarea,
+  input 
+  {
+    font-size: 16px;
+  }
+
+  .midlle-content 
+  {
+    margin-top: 40 !important
+  }
+  
+  .botao-fechar,
+  .botao-alterar,
+  .botao-cadastro,
+  .botao-remover
+  {
+    padding: 6 30;
+  }
+}
+
+@media screen and (min-width: 992px) 
+{
+  .modal-dialog
+  {
+    width: 80%
+  }
+
+  div.navbar-default.sidebar
+  {
+    margin-top: 110px !important;
+  }
+  
+  div.pull-right.breadcumberbach
+  {
+    margin: 0 !important;
+  }
+  
+  #ShowHide
+  {
+    display: block;
+  }
+  
+  .midlle-content 
+  {
+    margin-top: 0 !important
+  }
+  
+  .botao-fechar,
+  .botao-alterar,
+  .botao-cadastro,
+  .botao-remover
+  {
+    padding: 6 100;
+  }
+}
+
+input#submit
+{
+  color: #333;
+  background:none;
+  border:none;
+  margin: 0;
+  padding: 0;
+}
+
+td
+{
+  overflow-wrap: break-word;
+  width: 100px !important;
+  font-size: 14;
+}
+
+th
+{
+  width: 100px !important;
+  font-size: 14;
+}

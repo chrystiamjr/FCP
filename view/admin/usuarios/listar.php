@@ -25,8 +25,8 @@ if (!isset($_SESSION['tipo_usuario'])) {
     float: right;
   }
 </style>
-<link rel="stylesheet" href="<?php echo $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="<?php echo $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
+<link rel="stylesheet" href="<?= $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="<?= $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
 
 <body>
 
@@ -39,7 +39,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
 
         <div class="pull-right breadcumberbach">
           <ol class="breadcrumb">
-            <li><a href="<?php echo $project; ?>view/admin/dash.php">Dashboard</a></li>
+            <li><a href="<?= $project; ?>view/admin/dash.php">Dashboard</a></li>
             <li class="active">Gerenciar Usuários</li>
           </ol>
         </div>
@@ -79,13 +79,13 @@ if (!isset($_SESSION['tipo_usuario'])) {
             <?php if ($user->listarTodosUsuarios() != null || $user->listarTodosUsuarios() != false) {
               foreach ($user->listarTodosUsuarios() as $data) { ?>
                 <tr>
-                  <td style="text-align:center;width:50;vertical-align:middle"><?php echo $data['id_usuario'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['nome_usuario'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['login'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $data['tipo_usuario'] ?></td>
+                  <td style="text-align:center;width:50;vertical-align:middle"><?= $data['id_usuario'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['nome_usuario'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['login'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['tipo_usuario'] ?></td>
                   <?php $nome = $user->listarNomeGerente($data['id_gerente']);
                   if($nome){ ?>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?php echo $nome[0]['nome_usuario'] ?></td>
+                  <td style="text-align:center;width:100;vertical-align:middle"><?= $nome[0]['nome_usuario'] ?></td>
                   <?php } else { ?>
                   <td style="text-align:center;width:100;vertical-align:middle">-</td>
                   <?php } ?>
@@ -93,16 +93,16 @@ if (!isset($_SESSION['tipo_usuario'])) {
                     <button type="button" class="btn btn-primary alterar"
                             style="width:30;height:30;border-radius:50%;padding:0;margin-right: 10px"
                             data-toggle="modal" data-target="#alteracaoModal">
-                      <input class="id" type="hidden" value="<?php echo $data['id_usuario'] ?>">
-                      <input class="nome" type="hidden" value="<?php echo $data['nome_usuario'] ?>">
-                      <input class="login" type="hidden" value="<?php echo $data['login'] ?>">
-                      <input class="tipo" type="hidden" value="<?php echo $data['tipo_usuario'] ?>">
-                      <input class="gerente" type="hidden" value="<?php echo $data['id_gerente'] ?>">
+                      <input class="id" type="hidden" value="<?= $data['id_usuario'] ?>">
+                      <input class="nome" type="hidden" value="<?= $data['nome_usuario'] ?>">
+                      <input class="login" type="hidden" value="<?= $data['login'] ?>">
+                      <input class="tipo" type="hidden" value="<?= $data['tipo_usuario'] ?>">
+                      <input class="gerente" type="hidden" value="<?= $data['id_gerente'] ?>">
                       <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar"></i>
                     </button>
                     <button type="button" class="btn btn-danger remover" style="width:30;height:30;border-radius:50%;padding:0"
                             data-toggle="modal" data-target="#remocaoModal">
-                      <input class="id" type="hidden" value="<?php echo $data['id_usuario'] ?>">
+                      <input class="id" type="hidden" value="<?= $data['id_usuario'] ?>">
                       <i class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Remover"></i>
                     </button>
                   </td>
@@ -120,8 +120,8 @@ if (!isset($_SESSION['tipo_usuario'])) {
   </div>
 
   <?php include_once "../../../includes/scripts.php"; ?>
-  <script type="text/javascript" src="<?php echo $project; ?>vendor/datatables/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="<?php echo $project; ?>vendor/datatables/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?= $project; ?>vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="<?= $project; ?>vendor/datatables/js/dataTables.bootstrap.min.js"></script>
 
   <script>
     $(document).ready(function () {

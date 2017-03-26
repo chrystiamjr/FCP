@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php" enctype="multipart/form-data">
         <div class="modal-body">
 
           <input type="hidden" name="tabela" value="evento">
@@ -19,6 +19,7 @@
                      placeholder="Maximo de Caractéres 80" type="text" name="nome" required>
             </div>
           </div>
+
           <div class="form-group">
             <label for="descricao" class="col-sm-2 control-label">Descrição:</label>
             <div class="col-sm-10">
@@ -26,13 +27,7 @@
                         cols="30" rows="5" name="descricao" required></textarea>
             </div>
           </div>
-          <div class="form-group">
-            <label for="oficina" class="col-sm-2 control-label">Oficina:</label>
-            <div class="col-sm-10">
-              <textarea id="oficina" class="form-control" placeholder="Caracteres Maximos 80" maxlength="80"
-                        cols="30" rows="5" name="oficina" required></textarea>
-            </div>
-          </div>
+
           <div class="form-group">
             <label for="horario" class="col-sm-2 control-label">Horário:</label>
             <div class="col-sm-10">
@@ -40,12 +35,28 @@
                      style="text-align:center" required>
             </div>
           </div>
+
           <div class="form-group">
             <label for="preco" class="col-sm-2 control-label">Preço:</label>
             <div class="col-sm-10">
               <input id="preco" type="text" name="preco" class="form-control" required>
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="testeIMG" class="col-sm-2 control-label">Nome da imagem:</label>
+            <div class="col-sm-10">
+              <input type="text" name="imgText" id="testeIMG" class="form-control"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fieldImg" class="col-sm-2 control-label">Selecione a imagem:</label>
+            <div class="col-sm-10">
+              <input type="file" name="imagem" id="fieldImg" class="file" data-preview-file-type="text"/>
+            </div>
+          </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger btn-md pull-left botao-fechar" data-dismiss="modal">
@@ -72,7 +83,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php" enctype="multipart/form-data">
         <div class="modal-body">
 
           <input type="hidden" name="tabela" value="evento">
@@ -85,6 +96,7 @@
                      placeholder="Maximo de Caractéres 80" type="text" name="nome" required>
             </div>
           </div>
+
           <div class="form-group">
             <label for="descricao" class="col-sm-2 control-label">Descrição:</label>
             <div class="col-sm-10">
@@ -93,14 +105,7 @@
                         cols="30" rows="5" name="descricao" required></textarea>
             </div>
           </div>
-          <div class="form-group">
-            <label for="oficina" class="col-sm-2 control-label">Oficina:</label>
-            <div class="col-sm-10">
-              <textarea id="oficina" class="form-control oficinaAlterar" placeholder="Caracteres Maximos 80"
-                        maxlength="80"
-                        cols="30" rows="5" name="oficina" required></textarea>
-            </div>
-          </div>
+
           <div class="form-group">
             <label for="horario" class="col-sm-2 control-label">Horário:</label>
             <div class="col-sm-10">
@@ -108,6 +113,7 @@
                      style="text-align:center" required>
             </div>
           </div>
+
           <div class="form-group">
             <label for="preco" class="col-sm-2 control-label">Preço:</label>
             <div class="col-sm-10">
@@ -115,6 +121,21 @@
                      required>
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="imagem" class="col-sm-2 control-label"><span class="imgLabel"></span></label>
+            <div class="col-sm-10">
+              <div style="text-align:center" class="imgDivAlterar">
+                <img class="form-control imgAlterar" id="imagem" style="width:100%;height:50%;"/>
+              </div>
+              <input type="hidden" name="imgText" class="form-control imgTextAlterar"/>
+            </div>
+            <label for="fieldImg" class="col-sm-2 control-label">Selecione a imagem:</label>
+            <div class="col-sm-10">
+              <input type="file" name="imagem" id="fieldImg" class="file" data-preview-file-type="text"/>
+            </div>
+          </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger btn-md pull-left botao-fechar" data-dismiss="modal">
@@ -140,7 +161,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/casaLinguagemCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/casaLinguagemCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="tabela" value="evento">
@@ -162,8 +183,8 @@
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<script src="<?php echo $project; ?>js/jquery-ui.min.js"></script>
-<script src="<?php echo $project; ?>js/jquery.datetimepicker.full.js"></script>
+<script src="<?= $project; ?>js/jquery-ui.min.js"></script>
+<script src="<?= $project; ?>js/jquery.datetimepicker.full.js"></script>
 <script>
   $("document").ready(function () {
     $.datetimepicker.setLocale('pt');
@@ -172,6 +193,8 @@
       format: 'd/m/Y H:i',
       formatDate: 'd/m/Y'
     });
+
+    $("#fieldImg").fileinput({'showUpload':true, 'previewFileType':'any'});
   });
 
   // Limpa campos de data e horario ao clicar!

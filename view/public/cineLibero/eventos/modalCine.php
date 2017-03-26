@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/cineLiberoCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/cineLiberoCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -80,7 +80,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/cineLiberoCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/cineLiberoCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -157,7 +157,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Evento</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/cineLiberoCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/cineLiberoCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="view" value="public">
@@ -180,8 +180,8 @@
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<script src="<?php echo $project; ?>js/jquery-ui.min.js"></script>
-<script src="<?php echo $project; ?>js/jquery.datetimepicker.full.js"></script>
+<script src="<?= $project; ?>js/jquery-ui.min.js"></script>
+<script src="<?= $project; ?>js/jquery.datetimepicker.full.js"></script>
 <script>
   $("document").ready(function () {
     $.datetimepicker.setLocale('pt');

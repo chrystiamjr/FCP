@@ -7,7 +7,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Cadastro de Setor</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/setorCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/setorCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="cadastro">
@@ -43,7 +43,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Alteração de Setor</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/setorCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/setorCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="alteracao">
@@ -79,7 +79,7 @@
         <h2 class="modal-title" style="text-align:center;color:white">Exclusão de Setor</h2>
       </div>
 
-      <form class="form-horizontal" method="post" action="<?php echo $project; ?>controller/setorCtrl.php">
+      <form class="form-horizontal" method="post" action="<?= $project; ?>controller/setorCtrl.php">
         <div class="modal-body">
 
           <input type="hidden" name="sOP" value="remocao">

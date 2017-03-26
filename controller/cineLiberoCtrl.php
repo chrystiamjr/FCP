@@ -14,9 +14,11 @@ if ($view == 'public') {
 
     if ($sOP == "cadastro") {
       $arrayCadastro = filter_input_array(INPUT_POST);
+
       if (isset($arrayCadastro)) {
+        $uploadFile = uploadImg($arrayCadastro['imgText'],$_FILES['imagem']);
         $horario = str_replace('/', '-', $arrayCadastro['horario']);
-        $cine->cadastrarEventoCine($arrayCadastro['nome'], $arrayCadastro['descricao'], $arrayCadastro['progRegular'], $arrayCadastro['projeto'], $horario, $arrayCadastro['preco']);
+        $cine->cadastrarEventoCine($arrayCadastro['nome'], $arrayCadastro['descricao'], $arrayCadastro['progRegular'], $arrayCadastro['projeto'], $horario, $arrayCadastro['preco'], $uploadFile);
         header('Location: ' . $project . 'view/public/cineLibero/eventos/listar.php');
       } else {
         echo "Preencha todos os campos!";
@@ -25,9 +27,18 @@ if ($view == 'public') {
 
     elseif ($sOP == "alteracao") {
       $arrayAlteracao = filter_input_array(INPUT_POST);
-      if (isset($arrayAlteracao)) {
+      $data = $Linguagem->listarUmEventoLinguagem($arrayAlteracao['idEvento']);
+      
+      if (isset($arrayAlteracao) && isset($_FILES['imagem'])) {
+        if(!empty($_FILES['imagem']['name']))
+        {
+          $uploadFile = uploadImg($arrayAlteracao['imgText'],$_FILES['imagem']);
+        } else 
+        {
+          $uploadFile = $data[0]['imagem'];
+        }
         $horario = str_replace('/', '-', $arrayAlteracao['horario']);
-        $cine->alterarEventoCine($arrayAlteracao['idEvento'], $arrayAlteracao['nome'], $arrayAlteracao['descricao'], $arrayAlteracao['progRegular'], $arrayAlteracao['projeto'], $horario, $arrayAlteracao['preco']);
+        $cine->alterarEventoCine($arrayAlteracao['idEvento'], $arrayAlteracao['nome'], $arrayAlteracao['descricao'], $arrayAlteracao['progRegular'], $arrayAlteracao['projeto'], $horario, $arrayAlteracao['preco'], $uploadFile);
         header('Location: ' . $project . 'view/public/cineLibero/eventos/listar.php');
       } else {
         echo "Preencha todos os campos!";
@@ -93,9 +104,11 @@ if ($view == 'public') {
 
     if ($sOP == "cadastro") {
       $arrayCadastro = filter_input_array(INPUT_POST);
+
       if (isset($arrayCadastro)) {
+        $uploadFile = uploadImg($arrayCadastro['imgText'],$_FILES['imagem']);
         $horario = str_replace('/', '-', $arrayCadastro['horario']);
-        $cine->cadastrarEventoCine($arrayCadastro['nome'], $arrayCadastro['descricao'], $arrayCadastro['progRegular'], $arrayCadastro['projeto'], $horario, $arrayCadastro['preco']);
+        $cine->cadastrarEventoCine($arrayCadastro['nome'], $arrayCadastro['descricao'], $arrayCadastro['progRegular'], $arrayCadastro['projeto'], $horario, $arrayCadastro['preco'] ,$uploadFile);
         header('Location: ' . $project . 'view/admin/cineLibero/eventos/listar.php');
       } else {
         echo "Preencha todos os campos!";
@@ -104,9 +117,18 @@ if ($view == 'public') {
 
     elseif ($sOP == "alteracao") {
       $arrayAlteracao = filter_input_array(INPUT_POST);
-      if (isset($arrayAlteracao)) {
+      $data = $Linguagem->listarUmEventoLinguagem($arrayAlteracao['idEvento']);
+      
+      if (isset($arrayAlteracao) && isset($_FILES['imagem'])) {
+        if(!empty($_FILES['imagem']['name']))
+        {
+          $uploadFile = uploadImg($arrayAlteracao['imgText'],$_FILES['imagem']);
+        } else 
+        {
+          $uploadFile = $data[0]['imagem'];
+        }
         $horario = str_replace('/', '-', $arrayAlteracao['horario']);
-        $cine->alterarEventoCine($arrayAlteracao['idEvento'], $arrayAlteracao['nome'], $arrayAlteracao['descricao'], $arrayAlteracao['progRegular'], $arrayAlteracao['projeto'], $horario, $arrayAlteracao['preco']);
+        $cine->alterarEventoCine($arrayAlteracao['idEvento'], $arrayAlteracao['nome'], $arrayAlteracao['descricao'], $arrayAlteracao['progRegular'], $arrayAlteracao['projeto'], $horario, $arrayAlteracao['preco'] ,$uploadFile);
         header('Location: ' . $project . 'view/admin/cineLibero/eventos/listar.php');
       } else {
         echo "Preencha todos os campos!";
