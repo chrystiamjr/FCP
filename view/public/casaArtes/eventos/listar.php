@@ -1,30 +1,13 @@
 <?php
 include_once '../../../../database/dbCasaArtes.php';
 $artes = new dbCasaArtes();
-?>
+include_once "../../../../includes/header.php";
 
-<?php include_once "../../../../includes/header.php"; ?>
-
-<?php
 if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_SESSION['tipo_usuario'])){
   echo "<script>alert('Você não tem permissão para acessar esta página!\\n Efetue seu login!');window.location.href = " . $project . ";</script>";
 }
 ?>
 
-<style>
-  textarea {
-    resize: none;
-    overflow: auto;
-  }
-
-  label {
-    text-align: center !important;
-  }
-
-  #cadastrar {
-    float: right;
-  }
-</style>
 <link rel="stylesheet" href="<?= $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="<?= $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
 
@@ -71,17 +54,19 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
           <table id="tabela" class="table table-striped table-bordered table-hover" cellspacing="0">
             <thead><!--Table Header-->
             <tr><!--Table Row-->
-              <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">#</th>
+              <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle;width: 5% !important;">#</th>
               <!--Table Header Cell-->
               <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Evento</th>
               <!--Table Header Cell-->
               <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Descricão</th>
               <!--Table Header Cell-->
-              <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Oficina</th>
+              <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle;width: 10% !important;">Oficina</th>
               <!--Table Header Cell-->
               <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Horario</th>
               <!--Table Header Cell-->
               <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Preço</th>
+              <!--Table Header Cell-->
+              <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Imagem</th>
               <!--Table Header Cell-->
               <th style="background-color:#4e4e8e;text-align:center;color:white;vertical-align:middle">Ações</th>
               <!--Table Header Cell-->
@@ -91,13 +76,16 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
             <?php if ($artes->listarTodosEventosArtes() != null || $artes->listarTodosEventosArtes() != false) {
               foreach ($artes->listarTodosEventosArtes() as $data) { ?>
                 <tr>
-                  <td style="text-align:center;width:50;vertical-align:middle"><?= $data['id_evento'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['nome'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['descricao'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['oficina'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle"><?= $data['horario'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle">R$ <?= $data['preco'] ?></td>
-                  <td style="text-align:center;width:100;vertical-align:middle">
+                  <td style="text-align:center;vertical-align:middle;width:5% !important;"><?= $data['id_evento'] ?></td>
+                  <td style="text-align:center;vertical-align:middle"><?= $data['nome'] ?></td>
+                  <td style="text-align:center;vertical-align:middle"><?= formatarDescricao($data['descricao'], 50) ?></td>
+                  <td style="text-align:center;vertical-align:middle;width:10% !important;"><?= $data['oficina'] ?></td>
+                  <td style="text-align:center;vertical-align:middle"><?= $data['horario'] ?></td>
+                  <td style="text-align:center;vertical-align:middle"><?= verificaValor($data['preco']) ?></td>
+                  <td style="text-align:center;vertical-align:middle">
+                    <img src="<?= $data['imagem'] ?>" alt="<?= formatarImgText($data['imagem']) ?>" style="width: 100%;"/>
+                  </td>
+                  <td style="text-align:center;vertical-align:middle;width:10% !important;">
                     <button type="button" class="btn btn-primary alterar"
                             style="width:30;height:30;border-radius:50%;padding:0;margin-right: 10px"
                             data-toggle="modal" data-target="#alteracaoModal">
@@ -107,6 +95,8 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
                       <input class="oficina" type="hidden" value="<?= $data['oficina'] ?>">
                       <input class="horario" type="hidden" value="<?= $data['horario'] ?>">
                       <input class="preco" type="hidden" value="<?= $data['preco'] ?>">
+                      <input class="imgText" type="hidden" value="<?= formatarImgText($data['imagem']) ?>">
+                      <input class="img" type="hidden" value="<?= $data['imagem'] ?>">
                       <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar"></i>
                     </button>
                     <button type="button" class="btn btn-danger remover" style="width:30;height:30;border-radius:50%;padding:0"
@@ -156,6 +146,20 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
       var oficina = $(this).find('.oficina').val();
       var horario = $(this).find('.horario').val();
       var preco = $(this).find('.preco').val();
+      var imgText = $(this).find('.imgText').val();
+      var img = $(this).find('.img').val();
+
+      if(imgText.length == 0){
+        $('.imgTextAlterar').attr('type', 'text').css('margin-bottom', '10px');
+        $('.imgDivAlterar').css('height', '0px');
+        $('.imgLabel').children().remove();
+        $('.imgLabel').append('<p>Nome da Imagem:</p>');
+      } else {
+        $('.imgTextAlterar').attr('type', 'hidden').css('margin-bottom', '');
+        $('.imgDivAlterar').css('height', '');
+        $('.imgLabel').children().remove();
+        $('.imgLabel').append('<p>Imagem:</p>');
+      }
 
       $('#idAlteracao').val(idEvento);
       $('.nomeAlterar').val(nome);
@@ -163,6 +167,8 @@ if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_
       $('.oficinaAlterar').val(oficina);
       $('.horarioAlterar').val(horario);
       $('.precoAlterar').val(preco);
+      $('.imgTextAlterar').val(imgText);
+      $('.imgAlterar').attr('src', img);
     });
 
     $('.remover').click(function () {

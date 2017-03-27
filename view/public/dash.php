@@ -1,7 +1,6 @@
+<?php 
+include_once "../../includes/header.php";
 
-<?php include_once "../../includes/header.php"; ?>
-
-<?php
 if(!isset($_SESSION['id_usuario']) && !isset($_SESSION['id_setor']) && !isset($_SESSION['tipo_usuario'])){
   echo "<script>alert('Você não tem permissão para acessar esta página!\\n Efetue seu login!');window.location.href = ".$project.";</script>";
 }

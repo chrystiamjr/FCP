@@ -1,30 +1,13 @@
 <?php
 include_once '../../../../database/dbCasaLinguagem.php';
 $linguagem = new dbCasaLinguagem();
-?>
+include_once "../../../../includes/header.php";
 
-<?php include_once "../../../../includes/header.php"; ?>
-
-<?php
 if (!isset($_SESSION['tipo_usuario'])) {
   echo "<script>alert('Você não tem permissão para acessar esta página!\\n Efetue seu login!');window.location.href = " . $project . ";</script>";
 }
 ?>
 
-<style>
-  textarea {
-    resize: none;
-    overflow: auto;
-  }
-
-  label {
-    text-align: center !important;
-  }
-
-  #cadastrar {
-    float: right;
-  }
-</style>
 <link rel="stylesheet" href="<?= $project; ?>vendor/datatables/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="<?= $project; ?>vendor/datatables-plugins/dataTables.bootstrap.css">
 
@@ -97,7 +80,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
                   <td style="text-align:center;vertical-align:middle"><?= $data['horario'] ?></td>
                   <td style="text-align:center;vertical-align:middle"><?= verificaValor($data['preco']) ?></td>
                   <td style="text-align:center;vertical-align:middle">
-                    <img src="<?= formatarImagem($data['imagem']) ?>" alt="<?= formatarImgText($data['imagem']) ?>" style="width: 100%;"/>
+                    <img src="<?= $data['imagem'] ?>" alt="<?= formatarImgText($data['imagem']) ?>" style="width: 100%;"/>
                   </td>
                   <td style="text-align:center;width:10% !important;vertical-align:middle">
                     <button type="button" class="btn btn-primary alterar"
@@ -109,7 +92,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
                       <input class="horario" type="hidden" value="<?= $data['horario'] ?>">
                       <input class="preco" type="hidden" value="<?= $data['preco'] ?>">
                       <input class="imgText" type="hidden" value="<?= formatarImgText($data['imagem']) ?>">
-                      <input class="img" type="hidden" value="<?= formatarImagem($data['imagem']) ?>">
+                      <input class="img" type="hidden" value="<?= $data['imagem'] ?>">
                       <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar"></i>
                     </button>
                     <button type="button" class="btn btn-danger remover" style="width:30;height:30;border-radius:50%;padding:0"

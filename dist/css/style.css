@@ -4,6 +4,19 @@ html, body
   overflow-x: hidden;
 }
 
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+label {
+  text-align: center !important;
+}
+
+#cadastrar {
+  float: right;
+}
+
 @media screen and (min-width: 200px) 
 {
   div.navbar-default.sidebar

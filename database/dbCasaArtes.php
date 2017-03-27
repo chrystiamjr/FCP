@@ -13,11 +13,14 @@ class dbCasaArtes
   // ----------------------------------------------------------------------------------------------------------------- //
   // Sessão EVENTOS //
 
-  protected function formatarImgText($txt){
-    $text = explode("/",$txt);
-    $text = $text[count($text)-1]; // retorna o ultimo elemento do array
-    $text = explode(".",$text);
-    return $text[0];
+  protected function formatarDbUrl($img){
+    $url = ( ( ( count(explode('/', $img)) ) > 1 ) ? explode('/', $img) : explode('\\',$img) );
+    if(substr($img,0,15) == "C:\\xampp\\htdocs"){
+      $imagem = '/'.$url[3].'/'.$url[4].'/'.$url[5]; 
+    } elseif (($url[1].'/'.$url[3]) == "home/public_html"){
+      $imagem = '/'.$url[4].'/'.$url[5].'/'.$url[6];
+    }
+    return $imagem;
   }
 
   public function listarTodosEventosArtes()
@@ -49,7 +52,7 @@ class dbCasaArtes
 
   public function cadastrarEventoArtes($nome, $descricao, $ofina, $horario, $preco, $imagem)
   {
-
+    $imagem = $this->formatarDbUrl($imagem);
     $query = "INSERT INTO 
               evento_casa_artes(id_setor, nome, descricao, oficina, horario, preco, imagem) 
               VALUES
@@ -71,6 +74,7 @@ class dbCasaArtes
   {
     $data = $this->listarUmEventoArtes($idEvento);
     $hr = $data[0]['horario'];
+    $imagem = $this->formatarDbUrl($imagem);
 
     if ($horario == $hr) {
       $query = "UPDATE evento_casa_artes SET nome='{$nome}', descricao='{$descricao}', oficina='{$ofina}', preco='{$preco}', imagem='{$imagem}'

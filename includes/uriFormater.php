@@ -1,25 +1,36 @@
 <?php
   $project = explode('/', $_SERVER['REQUEST_URI'])[1] . '/'; // GET PROJECT NAME Place after .'/'.
   $project = '/'.$project;
-  $projectDir = "C:/xampp/htdocs".$project; // GET PROJECT NAME Place after .'/'.
+  if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    $projectDir = "C:/xampp/htdocs".$project; // GET PROJECT NAME Place after .'/'.
+  } else {
+    $projectDir = $project;
+  }
 
-//   // Define variáveis globais para HOST
-// if ($_SERVER['HTTP_HOST'] == 'localhost') {
-//   $project = explode('/', $_SERVER['REQUEST_URI'])[1] . '/';
-//   define('projectName', $project);
-//   define('publicDir', '/'.$project.'public/');
-//   $project = "C:/xampp/htdocs/".$project; // GET PROJECT NAME Place after .'/'.
-//   define('HOST', $project);
-// } else {
-//   $project = $_SERVER['HTTP_HOST'] . '/';
-//   define('projectName', $project);
-//   define('publicDir', $project.'public/');
-//   define('HOST', $project);
-// }
+function formatarURL($url, $projectName){
+  $server = ( ( ( count(explode('/', $url)) ) > 1 ) ? explode('/', $url) : explode('\\',$url) );
+  if($server[4] == $projectName){
+    $serverFinal = substr($url,0,29);
+    return $serverFinal.$projectName.'/uploads/';
 
+  } elseif($server[3] == $projectName) {
+    $serverFinal = substr($url,0,16);
+    return $serverFinal.$projectName.'\uploads\\';
+
+  }
+}
 
 function formatarImagem($img) {
-  return ((substr($img,0,15) == "C:/xampp/htdocs") ? substr($img,15) : $img);
+
+  $url = explode('/', $img);
+  $server = $url[1].'/'.$url[3];
+
+  if(substr($img,0,15) == "C:/xampp/htdocs"){
+    return substr($img,15);
+  } elseif ($server == "home/public_html"){
+    return '/'.$url[4].'/'.$url[5].'/'.$url[6];
+  }
+  // return ((substr($img,0,15) == "C:/xampp/htdocs") ? substr($img,15) : $img);
 }
 
 function formatarImgExt($txt){
@@ -35,17 +46,12 @@ function formatarImgText($txt){
 }
 
 function uploadImg($imgText, $file){
-  $project = explode('/', $_SERVER['REQUEST_URI'])[1] . '/'; // GET PROJECT NAME Place after .'/'.
-  $project = '/'.$project;
-  $projectDir = "C:/xampp/htdocs".$project; // GET PROJECT NAME Place after .'/'.
+  $project = explode('/', $_SERVER['REQUEST_URI'])[1];
 
-  // Validação de campos e envio de imagem!
-  // $uploadFile = null;
   if($imgText != "" && !empty($file['name']))
   {
-    $imgDir = $projectDir.'uploads/';
+    $imgDir = formatarURL(getcwd(),$project);
     $uploadFile = $imgDir . basename($imgText.'.png');
-    // die($file['tmp_name']);
     if (!move_uploaded_file($file['tmp_name'], $uploadFile))
     {
       die("Arquivo não enviado!\nConsulte o técnico");
