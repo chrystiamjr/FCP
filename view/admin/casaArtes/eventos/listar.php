@@ -83,7 +83,7 @@ if (!isset($_SESSION['tipo_usuario'])) {
                   <td style="text-align:center;vertical-align:middle"><?= $data['horario'] ?></td>
                   <td style="text-align:center;vertical-align:middle"><?= verificaValor($data['preco']) ?></td>
                   <td style="text-align:center;vertical-align:middle">
-                    <img src="<?= $data['imagem'] ?>" alt="<?= formatarImgText($data['imagem']) ?>" style="width: 100%;"/>
+                    <img src="<?= $data['imagem'] ?>" alt="<?= formatarImgText($data['imagem']) ?>" style="width: 45%;"/>
                   </td>
                   <td style="text-align:center;vertical-align:middle;width:10% !important;">
                     <button type="button" class="btn btn-primary alterar"

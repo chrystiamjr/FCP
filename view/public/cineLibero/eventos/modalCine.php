@@ -162,7 +162,7 @@
             <label for="imagem" class="col-sm-2 control-label"><span class="imgLabel"></span></label>
             <div class="col-sm-10">
               <div style="text-align:center" class="imgDivAlterar">
-                <img class="form-control imgAlterar" id="imagem" style="width:100%;height:50%;"/>
+                <img class="form-control imgAlterar" id="imagem" style="width:65%;height:50%;"/>
               </div>
               <input type="hidden" name="imgText" class="form-control imgTextAlterar"/>
             </div>
